@@ -6,12 +6,28 @@ import * as path from 'path'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import { fileURLToPath } from 'url'
-import { blue, yellow, cyan, green, red, reset } from 'kolorist'
+import { blue, yellow, cyan, magenta, green, red, reset } from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
 const FRAMEWORKS = [
+  {
+    name: 'preact',
+    color: magenta,
+    variants: [
+      {
+        name: 'preact-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
+      {
+        name: 'preact-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
   {
     name: 'react',
     color: cyan,

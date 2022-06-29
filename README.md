@@ -38,6 +38,8 @@ pnpm create chrome-ext my-chrome-ext --template svelte-ts
 
 Currently supported template presets include:
 
+- `preact-js`
+- `preact-ts`
 - `react-js`
 - `react-ts`
 - `svelte-js`
