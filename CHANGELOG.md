@@ -9,6 +9,8 @@ Summary
   5. version stamp follow the yyyy.MM.dd format
 ```
 
-## 0.1.0 [yyyy.MM.dd]
+## 0.0.0 [yyyy.MM.dd]
 
 - feat: initial
+- feat: boilerplate for create chrome extension with vite2
+- feat: react-ts\svelte-ts\svelte-js\vue-ts\vue-js boilerplate

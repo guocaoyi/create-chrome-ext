@@ -1,4 +1,4 @@
-# Create CRX APP
+# Create Chrome Extension
 
 ## Installing
 

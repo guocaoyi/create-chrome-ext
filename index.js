@@ -6,27 +6,32 @@ import * as path from 'path'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import { fileURLToPath } from 'url'
-import { blue, cyan, green, red, reset } from 'kolorist'
+import { blue, yellow, lightRed, cyan, green, red, reset } from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
 const FRAMEWORKS = [
-  // {
-  //   name: 'react',
-  //   color: cyan,
-  //   variants: [
-  //     {
-  //       name: 'react-ts',
-  //       display: 'TypeScript',
-  //       color: blue,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'react',
+    color: cyan,
+    variants: [
+      {
+        name: 'react-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
   {
     name: 'svelte',
     color: red,
     variants: [
+      {
+        name: 'svelte-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
       {
         name: 'svelte-ts',
         display: 'TypeScript',
@@ -34,17 +39,22 @@ const FRAMEWORKS = [
       },
     ],
   },
-  // {
-  //   name: 'vue',
-  //   color: green,
-  //   variants: [
-  //     {
-  //       name: 'vue-ts',
-  //       display: 'TypeScript',
-  //       color: blue,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'vue',
+    color: green,
+    variants: [
+      {
+        name: 'vue-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
+      {
+        name: 'vue-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
 ]
 
 const TEMPLATES = FRAMEWORKS.map(
