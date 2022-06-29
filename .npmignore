@@ -1,0 +1,9 @@
+__tests__
+node_modules
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+.gitignore
+.DS_Store
+*.log

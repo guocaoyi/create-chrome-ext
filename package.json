@@ -1,0 +1,42 @@
+{
+  "name": "create-crxapp",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "crx app creater",
+  "author": "yalda",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "create-crx": "index.js",
+    "crx": "index.js"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "files": [
+    "index.js",
+    "template-*"
+  ],
+  "scripts": {
+    "fmt": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guocaoyi/create-crxapp.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "crx",
+    "creater"
+  ],
+  "bugs": {
+    "url": "https://github.com/guocaoyi/create-crxapp/issues"
+  },
+  "homepage": "https://github.com/guocaoyi/create-crxapp#readme",
+  "dependencies": {
+    "kolorist": "^1.5.1",
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2"
+  }
+}

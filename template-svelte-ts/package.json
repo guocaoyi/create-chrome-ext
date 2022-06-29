@@ -1,0 +1,24 @@
+{
+  "name": "chrome-extension-boilerplate-vite-svelte",
+  "version": "0.0.0",
+  "description": "A chrome extension boilerplate built with Svelte 3, Vite 2",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf build && vite build",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.12",
+    "@sveltejs/vite-plugin-svelte": "1.0.0-next.49",
+    "prettier": "^2.5.1",
+    "svelte": "^3.44.0",
+    "svelte-preprocess": "^4.9.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  }
+}
