@@ -13,4 +13,5 @@ Summary
 
 - feat: initial
 - feat: boilerplate for create chrome extension with vite2
-- feat: react-ts\svelte-ts\svelte-js\vue-ts\vue-js boilerplate
+- feat: react-js\react-ts\svelte-ts\svelte-js\vue-ts\vue-js boilerplate
+- feat: vanilla-js\vanilla-ts boilerplate

@@ -1,14 +1,10 @@
-import path from 'path'
-import sveltePreprocess from 'svelte-preprocess'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import { crx } from '@crxjs/vite-plugin'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-
 import manifest from './src/manifest.js'
 
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const production = mode === 'production'
-
   return {
     build: {
       emptyOutDir: true,
@@ -19,15 +15,7 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    plugins: [
-      crx({ manifest }),
-      svelte({
-        compilerOptions: {
-          dev: !production,
-        },
-        preprocess: sveltePreprocess(),
-      }),
-      ,
-    ],
+
+    plugins: [crx({ manifest }), react()],
   }
 })
