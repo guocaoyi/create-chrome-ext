@@ -6,16 +6,16 @@
 
 ```bash
 # with npm
-λ npm create crxapp@latest
+λ npm create chrome-ext@latest
 
 # with pnpm
-λ pnpm create crxapp
+λ pnpm create chrome-ext
 
 # with yarn
-λ yarn create crxapp
+λ yarn create chrome-ext
 
 # with npx
-λ npx create-crxapp
+λ npx create-chrome-ext
 ```
 
 Then follow the prompts!
@@ -24,16 +24,16 @@ You can also directly specify the project name and the template you want to use 
 
 ```bash
 # npm 6.x
-npm create crxapp@latest my-crxapp --template svelte-ts
+npm create chrome-ext@latest my-chrome-ext --template svelte-ts
 
 # npm 7+, extra double-dash is needed:
-npm create crxapp@latest my-crxapp -- --template svelte-ts
+npm create chrome-ext@latest my-chrome-ext -- --template svelte-ts
 
 # yarn
-yarn create crxapp my-crxapp --template svelte-ts
+yarn create chrome-ext my-chrome-ext --template svelte-ts
 
 # pnpm
-pnpm create crxapp my-crxapp --template svelte-ts
+pnpm create chrome-ext my-chrome-ext --template svelte-ts
 ```
 
 Currently supported template presets include:

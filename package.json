@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guocaoyi/create-crxapp.git"
+    "url": "git+https://github.com/guocaoyi/create-chrome-ext.git"
   },
   "keywords": [
     "chrome",
@@ -31,9 +31,9 @@
     "creater"
   ],
   "bugs": {
-    "url": "https://github.com/guocaoyi/create-crxapp/issues"
+    "url": "https://github.com/guocaoyi/create-chrome-ext/issues"
   },
-  "homepage": "https://github.com/guocaoyi/create-crxapp#readme",
+  "homepage": "https://github.com/guocaoyi/create-chrome-ext#readme",
   "dependencies": {
     "kolorist": "^1.5.1",
     "minimist": "^1.2.6",
