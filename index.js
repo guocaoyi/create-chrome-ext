@@ -63,6 +63,7 @@ const renameFiles = {
 
 async function init() {
   let targetDir = formatTargetDir(argv._[0]) ?? ''
+  let author = '**'
   let template = argv.template || argv.t
 
   const defaultTargetDir = 'vite-project'
@@ -95,7 +96,7 @@ async function init() {
           message: reset('Author:'),
           initial: 'no one',
           onState: (state) => {
-            targetDir = formatTargetDir(state.value) || 'no one'
+            author = formatTargetDir(state.value) || 'no one'
           },
         },
         {
@@ -193,6 +194,8 @@ async function init() {
   const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8'))
 
   pkg.name = packageName || getProjectName()
+  pkg.author = author || '*'
+  pkg.description = ''
 
   write('package.json', JSON.stringify(pkg, null, 2))
 

@@ -4,22 +4,18 @@
 
 > Node >= 14.18.0
 
-With NPM:
-
 ```bash
+# with npm
 λ npm create crxapp@latest
-```
 
-With Yarn:
-
-```bash
-λ yarn create crxapp
-```
-
-With PNPM:
-
-```bash
+# with pnpm
 λ pnpm create crxapp
+
+# with yarn
+λ yarn create crxapp
+
+# with npx
+λ npx create-crxapp
 ```
 
 Then follow the prompts!
@@ -28,16 +24,16 @@ You can also directly specify the project name and the template you want to use 
 
 ```bash
 # npm 6.x
-npm create crxapp@latest my-crxapp --template svelte
+npm create crxapp@latest my-crxapp --template svelte-ts
 
 # npm 7+, extra double-dash is needed:
-npm create crxapp@latest my-crxapp -- --template svelte
+npm create crxapp@latest my-crxapp -- --template svelte-ts
 
 # yarn
-yarn create crxapp my-crxapp --template svelte
+yarn create crxapp my-crxapp --template svelte-ts
 
 # pnpm
-pnpm create crxapp my-crxapp --template svelte
+pnpm create crxapp my-crxapp --template svelte-ts
 ```
 
 Currently supported template presets include:

@@ -1,8 +1,8 @@
 {
-  "name": "create-crxapp",
-  "version": "0.0.1",
+  "name": "create-chrome-ext",
+  "version": "0.0.0",
   "type": "module",
-  "description": "crx app creater",
+  "description": "Scaffolding Your First Chrome Extension",
   "author": "yalda",
   "license": "MIT",
   "main": "index.js",
