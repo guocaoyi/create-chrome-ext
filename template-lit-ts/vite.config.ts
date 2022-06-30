@@ -1,3 +1,4 @@
+import * as path from 'path'
 import { defineConfig } from 'vite'
 import { crx } from '@crxjs/vite-plugin'
 import manifest from './src/manifest'
@@ -8,13 +9,14 @@ export default defineConfig({
     emptyOutDir: true,
     outDir: 'build',
     rollupOptions: {
+      input: {
+        options: path.resolve('options.html'),
+        popup: path.resolve('popup.html'),
+      },
       output: {
         chunkFileNames: 'assets/chunk-[hash].js',
       },
     },
   },
-  plugin: [
-    //
-    crx({ manifest }),
-  ],
+  plugin: [crx({ manifest })],
 })

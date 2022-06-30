@@ -7,7 +7,7 @@
 
 - ⚡️ Lightning Fast HMR(use vite2)
 - 📦 Optimized Builds
-- 💾 Multiple Platform Support
+- 🗂 Multiple Platform Support
 - 📚 Documentation
 
 ## Installing
@@ -60,11 +60,17 @@ run:
 
 template presets include:
 
-- `lit-js | lit-ts`
-- `preact-js | preact-ts`
-- `react-js | react-ts`
-- `svelte-js | svelte-ts`
-- `vanilla-js | vanilla-ts`
-- `vue-js | vue-ts`
+- `lit-js`
+- `lit-ts`
+- `preact-js`
+- `preact-ts`
+- `react-js`
+- `react-ts`
+- `svelte-js`
+- `svelte-ts`
+- `vanilla-js`
+- `vanilla-ts`
+- `vue-js`
+- `vue-ts`
 
 You can use `.` for the project name to scaffold in the current directory.

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf build && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "fmt": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
