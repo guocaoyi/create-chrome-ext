@@ -1,12 +1,13 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Scaffolding Your First Chrome Extension",
   "author": "yalda",
   "license": "MIT",
   "main": "index.js",
   "bin": {
+    "create-chrome-ext": "index",
     "crx": "index.js"
   },
   "engines": {

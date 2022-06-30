@@ -9,7 +9,15 @@ Summary
   5. version stamp follow the yyyy.MM.dd format
 ```
 
-## 0.0.0 [yyyy.MM.dd]
+## 0.1.1 [2022.06.29]
+
+- fix: add bin script `create-chrome-ext`
+
+## 0.1.0 [2022.06.29]
+
+- feat: add github action for npm publish
+
+## 0.0.0 [2022.06.29]
 
 - feat: initial
 - feat: boilerplate for create chrome extension with vite2
