@@ -24,6 +24,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: NPM CI
+        run: npm install
         run: npm ci
 
       - name: Publish to NPM
