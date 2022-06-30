@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
 ![GitHub language count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
+[![NPM Publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
 
 > Next generation chrome extension generater
 
