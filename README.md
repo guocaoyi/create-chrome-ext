@@ -1,4 +1,14 @@
-# Create Chrome Extension
+# Create Chrome Ext
+
+[![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
+[![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
+
+> Next generation chrome extension tooling
+
+- ⚡️ Lightning Fast HMR(use vite2)
+- 📦 Optimized Builds
+- 💾 Multiple Platform Support
+- 📚 Documentation
 
 ## Installing
 
@@ -8,45 +18,53 @@
 # with npm
 λ npm create chrome-ext@latest
 
-# with pnpm
+# or with pnpm
 λ pnpm create chrome-ext
 
-# with yarn
+# or with yarn
 λ yarn create chrome-ext
 
-# with npx
+# or with npx
 λ npx create-chrome-ext
 ```
 
-Then follow the prompts!
+## Usage
 
 You can also directly specify the project name and the template you want to use via additional command line options. For example, to scaffold a Vite + Svelte project, run:
 
 ```bash
 # npm 6.x
-npm create chrome-ext@latest my-chrome-ext --template svelte-ts
+λ npm create chrome-ext@latest my-crx-app --template svelte-js
 
-# npm 7+, extra double-dash is needed:
-npm create chrome-ext@latest my-chrome-ext -- --template svelte-ts
+# or npm 7+, extra double-dash is needed:
+λ npm create chrome-ext@latest my-crx-app -- --template react-ts
 
-# yarn
-yarn create chrome-ext my-chrome-ext --template svelte-ts
+# or yarn
+λ yarn create chrome-ext my-crx-app --template vue-ts
 
-# pnpm
-pnpm create chrome-ext my-chrome-ext --template svelte-ts
+# or pnpm
+λ pnpm create chrome-ext my-crx-app --template vanilla-ts
 ```
 
-Currently supported template presets include:
+You can also generator the project with `crx` cli.
+run:
 
-- `preact-js`
-- `preact-ts`
-- `react-js`
-- `react-ts`
-- `svelte-js`
-- `svelte-ts`
-- `vanilla-js`
-- `vanilla-ts`
-- `vue-js`
-- `vue-ts`
+```bash
+λ npm install create-chrome-ext --global
+
+# and then
+λ crx my-crx-app --template preact-js
+```
+
+## Supported Templates
+
+template presets include:
+
+- `lit-js | lit-ts`
+- `preact-js | preact-ts`
+- `react-js | react-ts`
+- `svelte-js | svelte-ts`
+- `vanilla-js | vanilla-ts`
+- `vue-js | vue-ts`
 
 You can use `.` for the project name to scaffold in the current directory.

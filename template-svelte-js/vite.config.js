@@ -1,4 +1,3 @@
-import path from 'path'
 import sveltePreprocess from 'svelte-preprocess'
 import { defineConfig } from 'vite'
 import { crx } from '@crxjs/vite-plugin'
