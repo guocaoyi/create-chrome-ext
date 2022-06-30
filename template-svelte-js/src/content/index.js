@@ -1,3 +1,3 @@
-console.info('chrome-extension-boilerplate-vite-svelte content script')
+console.info('chrome-ext template-svelte-js content script')
 
 export {}

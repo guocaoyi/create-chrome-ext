@@ -5,13 +5,14 @@ import * as fs from 'fs'
 import * as path from 'path'
 import minimist from 'minimist'
 import prompts from 'prompts'
+import mustache from 'mustache'
 import { fileURLToPath } from 'url'
 import { blue, lightBlue, yellow, cyan, magenta, green, red, reset } from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
-const FRAMEWORKS = [
+const Boilerplates = [
   {
     name: 'lit',
     color: lightBlue,
@@ -110,18 +111,27 @@ const FRAMEWORKS = [
   },
 ]
 
-const TEMPLATES = FRAMEWORKS.map(
+const TEMPLATES = Boilerplates.map(
   (f) => (f.variants && f.variants.map((v) => v.name)) || [f.name],
 ).reduce((a, b) => a.concat(b), [])
 
-const renameFiles = {
-  '.editorconfig.mustache': '.editorconfig',
-  '.gitignore.mustache': '.gitignore',
-  '.npmignore.mustache': '.npmignore',
-  '.prettierignore.mustache': '.prettierignore',
-  '.prettierrc.mustache': '.prettierrc',
-  'LICENSE.mustache': 'LICENSE',
-  'README.md.mustache': 'README.md',
+const renameFiles = {}
+
+// @ts-ignore
+Date.prototype.format = function (fmt) {
+  const o = {
+    'M+': this.getMonth() + 1,
+    'd+': this.getDate(),
+  }
+  if (/(y+)/.test(fmt))
+    fmt = fmt.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length))
+  for (var k in o)
+    if (new RegExp('(' + k + ')').test(fmt))
+      fmt = fmt.replace(
+        RegExp.$1,
+        RegExp.$1.length == 1 ? o[k] : ('00' + o[k]).substr(('' + o[k]).length),
+      )
+  return fmt
 }
 
 async function init() {
@@ -163,8 +173,8 @@ async function init() {
           },
         },
         {
-          type: (_, { overwrite } = {}) => {
-            if (overwrite === false) {
+          type: (_, opts = {}) => {
+            if (opts.overwrite === false) {
               throw new Error(red('✖') + ' Operation cancelled')
             }
             return null
@@ -186,7 +196,7 @@ async function init() {
               ? reset(`"${template}" isn't a valid template. Please choose from below: `)
               : reset('Select a framework:'),
           initial: 0,
-          choices: FRAMEWORKS.map((framework) => {
+          choices: Boilerplates.map((framework) => {
             const frameworkColor = framework.color
             return {
               title: frameworkColor(framework.name),
@@ -236,7 +246,20 @@ async function init() {
 
   console.log(`\nScaffolding project in ${root}...`)
 
+  // template boilerplate
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '..', `template-${template}`)
+
+  // mustache
+  const mustacheDir = path.resolve(fileURLToPath(import.meta.url), '..', 'mustache')
+
+  const opts = {
+    name: packageName || getProjectName(),
+    author: author || '*',
+    //@ts-ignore
+    now: new Date().format('yyyy.MM.dd'),
+    //@ts-ignore
+    nowYear: new Date().format('yyyy'),
+  }
 
   const write = (file, content) => {
     const targetPath = renameFiles[file]
@@ -244,6 +267,8 @@ async function init() {
       : path.join(root, file)
     if (content) {
       fs.writeFileSync(targetPath, content)
+    } else if (/\.mustache$/gi.test(file)) {
+      copy(path.join(mustacheDir, file), targetPath, opts)
     } else {
       copy(path.join(templateDir, file), targetPath)
     }
@@ -254,11 +279,15 @@ async function init() {
     write(file)
   }
 
+  const mFiles = fs.readdirSync(mustacheDir)
+  for (const file of mFiles) {
+    write(file)
+  }
+
   const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8'))
 
   pkg.name = packageName || getProjectName()
   pkg.author = author || '*'
-  pkg.description = ''
 
   write('package.json', JSON.stringify(pkg, null, 2))
 
@@ -289,10 +318,15 @@ function formatTargetDir(targetDir) {
   return targetDir?.trim().replace(/\/+$/g, '')
 }
 
-function copy(src, dest) {
+function copy(src, dest, opts = {}) {
   const stat = fs.statSync(src)
   if (stat.isDirectory()) {
     copyDir(src, dest)
+  } else if (/\.mustache$/gi.test(src)) {
+    let stemp = fs.readFileSync(src, { encoding: 'utf8' })
+    let result = mustache.render(stemp, opts)
+    dest = dest.replace(/\.mustache$/gi, '')
+    fs.writeFileSync(dest, result, { encoding: 'utf-8' })
   } else {
     fs.copyFileSync(src, dest)
   }

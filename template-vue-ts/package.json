@@ -1,11 +1,15 @@
 {
-  "name": "vite-vue-typescript-starter",
-  "private": true,
+  "name": "chrome-ext-starter",
   "version": "0.0.0",
+  "private": true,
+  "author": "",
+  "description": "",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{vue,ts,json,css,scss,md}'"
   },
   "dependencies": {
     "vue": "^3.2.37"

@@ -1,9 +1,9 @@
 import { defineManifest } from '@crxjs/vite-plugin'
 
 export default defineManifest({
-  name: 'chrome-extension-boilerplate-vite-vanilla',
-  description: 'A chrome extension boilerplate built with TypeScript 4, Vite 2',
-  version: '0.0.1',
+  name: 'create-chrome-ext',
+  description: 'A chrome extension boilerplate built by create-chrome-ext',
+  version: '0.0.0',
   manifest_version: 3,
   icons: {
     '16': 'img/logo-16.png',

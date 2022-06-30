@@ -2,12 +2,13 @@
 
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
+![GitHub language count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 
-> Next generation chrome extension tooling
+> Next generation chrome extension generater
 
 - ⚡️ Lightning Fast HMR(use vite2)
 - 📦 Optimized Builds
-- 🗂 Multiple Platform Support
+- 🗂 Multiple Framework Support
 - 📚 Documentation
 
 ## Installing

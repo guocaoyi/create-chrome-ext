@@ -1,15 +1,13 @@
 <script>
-  const crx = 'chrome-extension-boilerplate-vite-svelte'
+  const crx = 'create-chrome-ext'
 </script>
 
 <main>
   <h3>Options Page!</h3>
 
-  <h6>v 0.0.1</h6>
+  <h6>v 0.0.0</h6>
 
-  <a href="https://github.com/guocaoyi/chrome-extension-boilerplate-vite-svelte" target="_blank"
-    >Power by {crx}</a
-  >
+  <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank">Power by {crx}</a>
 </main>
 
 <style>

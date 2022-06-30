@@ -1,16 +1,16 @@
 <script setup>
 import { ref } from 'vue'
 
-const crx = ref('chrome-extension-boilerplate-vite-svelte')
+const crx = ref('create-chrome-ext')
 </script>
 
 <template>
   <main>
     <h3>Popup Page!</h3>
 
-    <h6>v 0.0.1</h6>
+    <h6>v 0.0.0</h6>
 
-    <a href="https://github.com/guocaoyi" target="_blank">Power by {{ crx }}</a>
+    <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank">Power by {{ crx }}</a>
   </main>
 </template>
 

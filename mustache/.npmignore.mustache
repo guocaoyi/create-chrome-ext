@@ -4,21 +4,23 @@
 # ignore node dependency directories & lock
 node_modules
 yarn.lock
-package-lock.json
 pnpm-lock.yaml
+package-lock.json
 
 # ignore log files and local
 *.log
 *.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.history
 
 # ignore compiled files
 build
 types
+coverage
 
 # ignore ide settings
 .idea
-
-# track these files, if they exist
-!.gitignore
-!.editorconfig
-!.vscode
+.vscode

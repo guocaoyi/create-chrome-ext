@@ -1,8 +1,8 @@
 import { defineManifest } from '@crxjs/vite-plugin'
 
 export default defineManifest({
-  name: 'chrome-extension-boilerplate-vite-svelte',
-  description: 'A chrome extension boilerplate built with Svelte 3, Vite 2',
+  name: 'create-chrome-ext',
+  description: 'A chrome extension boilerplate built by create-chrome-ext',
   version: '0.0.0',
   manifest_version: 3,
   icons: {

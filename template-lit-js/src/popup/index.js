@@ -20,11 +20,11 @@ export class Popup extends LitElement {
       <main>
         <h3>Popup Page!</h3>
 
-        <h6>v 0.0.1</h6>
+        <h6>v 0.0.0</h6>
 
         <slot></slot>
 
-        <a href="https://github.com/guocaoyi/create-chrome-ext" target="_blank"
+        <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank"
           >Generator by ${this.crx}</a
         >
       </main>

@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "Scaffolding Your First Chrome Extension",
   "author": "yalda",
@@ -13,11 +13,12 @@
     "node": ">=14.18.0"
   },
   "files": [
-    "index.js",
-    "template-*"
+    "mustache",
+    "template-*",
+    "index.js"
   ],
   "scripts": {
-    "fmt": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{vue,svelte,js,jsx,ts,tsx,json,css,md}'"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,11 @@
   "dependencies": {
     "kolorist": "^1.5.1",
     "minimist": "^1.2.6",
+    "mustache": "^4.2.0",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
+    "@types/node": "14.18.18",
     "prettier": "2.7.1"
   }
 }

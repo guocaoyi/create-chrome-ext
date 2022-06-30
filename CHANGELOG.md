@@ -15,3 +15,4 @@ Summary
 - feat: boilerplate for create chrome extension with vite2
 - feat: react-js\react-ts\svelte-ts\svelte-js\vue-ts\vue-js boilerplate
 - feat: vanilla-js\vanilla-ts\preact-js\preact-ts boilerplate
+- feat: add mustache templates

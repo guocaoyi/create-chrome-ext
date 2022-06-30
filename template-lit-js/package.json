@@ -1,20 +1,24 @@
 {
-  "name": "vite-lit-starter",
-  "private": true,
+  "name": "chrome-ext-starter",
   "version": "0.0.0",
+  "private": true,
+  "author": "",
+  "description": "",
   "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "fmt": "prettier --write '**/*.{js,json,css,scss,md}'"
   },
   "dependencies": {
     "lit": "^2.2.6"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
+    "prettier": "^2.5.1",
     "vite": "^2.9.13"
   }
 }
