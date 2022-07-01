@@ -194,7 +194,7 @@ async function init() {
           message:
             typeof template === 'string' && !TEMPLATES.includes(template)
               ? reset(`"${template}" isn't a valid template. Please choose from below: `)
-              : reset('Select a framework:'),
+              : reset('Framework:'),
           initial: 0,
           choices: Boilerplates.map((framework) => {
             const frameworkColor = framework.color
@@ -207,7 +207,7 @@ async function init() {
         {
           type: (framework) => (framework && framework.variants ? 'select' : null),
           name: 'variant',
-          message: reset('Select a variant:'),
+          message: reset('Language:'),
           // @ts-ignore
           choices: (framework) =>
             framework.variants.map((variant) => {
