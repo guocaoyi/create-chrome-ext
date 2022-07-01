@@ -85,6 +85,6 @@ You can use `.` for the project name to scaffold in the current directory.
 
 ## Preview
 
-![npm-create-cli](./doc/npm-create-cli.png)
-![npm-build](./doc/npm-build.png)
-![crx-preview](./doc/crx-preview.png)
+![npm-create-cli](./docs/npm-create-cli.png)
+![npm-build](./docs/npm-build.png)
+![crx-preview](./docs/crx-preview.png)
