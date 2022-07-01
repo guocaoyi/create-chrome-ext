@@ -9,13 +9,15 @@ Summary
   5. version stamp follow the yyyy.MM.dd format
 ```
 
-## 0.1.1 [2022.06.29]
+## 0.2.0 [2022.07.01]
 
-- fix: add bin script `create-chrome-ext`
+- doc: add preview image for useage
+- fix: vue-ts templates, build error
 
-## 0.1.0 [2022.06.29]
+## 0.1.0 [2022.06.30]
 
 - feat: add github action for npm publish
+- fix: add bin script `create-chrome-ext`
 
 ## 0.0.0 [2022.06.29]
 

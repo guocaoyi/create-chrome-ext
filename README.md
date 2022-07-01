@@ -1,9 +1,11 @@
 # Create Chrome Ext
 
-[![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
-[![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
-![GitHub language count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
-[![NPM Publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
+[![NPM](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
+[![npm-Download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
+![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
+[![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/guocaoyi/create-chrome-ext)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gucoaoyi/create-chrome-ext)
 
 > Next generation chrome extension generater
 
@@ -76,3 +78,9 @@ template presets include:
 - `vue-ts`
 
 You can use `.` for the project name to scaffold in the current directory.
+
+## Preview
+
+![npm-create-cli](./doc/npm-create-cli.png)
+![npm-build](./doc/npm-build.png)
+![crx-preview](./doc/crx-preview.png)
