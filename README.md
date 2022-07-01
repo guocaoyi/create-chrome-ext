@@ -1,11 +1,10 @@
-# Create Chrome Ext
+# Create Chrome Ext (CRX)
 
+[![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
 [![NPM](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-Download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
 ![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/guocaoyi/create-chrome-ext)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gucoaoyi/create-chrome-ext)
 
 > Next generation chrome extension generater
 

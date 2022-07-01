@@ -32,15 +32,18 @@
     "chrome-extension",
     "creater",
     "create-crx",
-    "create-crxapp",
-    "create-crx-app",
-    "create-chrome-ext",
-    "create-chrome-extension"
+    "create-chrome-extension",
+    "react",
+    "vue",
+    "svelte",
+    "lit",
+    "vanilla",
+    "preact"
   ],
   "bugs": {
     "url": "https://github.com/guocaoyi/create-chrome-ext/issues"
   },
-  "homepage": "https://github.com/guocaoyi/create-chrome-ext#readme",
+  "homepage": "https://crx.yalda.cn",
   "dependencies": {
     "kolorist": "^1.5.1",
     "minimist": "^1.2.6",
