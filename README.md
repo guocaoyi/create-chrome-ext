@@ -57,7 +57,11 @@ run:
 λ npm install create-chrome-ext --global
 
 # and then
+λ crx my-crx-app
+# or
 λ crx my-crx-app --template preact-js
+# or use create-chrome-exe (global env)
+λ create-chrome-ext my-crx-app
 ```
 
 ## Supported Templates

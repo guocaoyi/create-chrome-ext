@@ -135,7 +135,7 @@ Date.prototype.format = function (fmt) {
 }
 
 async function init() {
-  let targetDir = formatTargetDir(argv._[0]) ?? ''
+  let targetDir = formatTargetDir(argv._[0]) || ''
   let author = '**'
   let template = argv.template || argv.t
 
