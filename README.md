@@ -1,10 +1,11 @@
-# Create Chrome Ext (CRX)
+# Create Chrome Ext (.crx)
 
 [![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
-[![NPM](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
-[![npm-Download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
+[![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
+[![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
 ![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fwithout_horn)
 
 > Next generation chrome extension generater
 
@@ -67,20 +68,18 @@ run:
 
 template presets include:
 
-- `lit-js`
-- `lit-ts`
-- `preact-js`
-- `preact-ts`
-- `react-js`
-- `react-ts`
-- `svelte-js`
-- `svelte-ts`
-- `vanilla-js`
-- `vanilla-ts`
-- `vue-js`
-- `vue-ts`
+- [React](https://reactjs.org/)
+- [Vue](https://vuejs.org/)
+- [Svelte](https://svelte.dev/)
+- [Solid](https://www.solidjs.com/)
+- [Preact](https://preactjs.com/)
+- [Lit](https://lit.dev/)
+- [Vanilla](http://vanilla-js.com/)
 
-You can use `.` for the project name to scaffold in the current directory.
+languages presets include:
+
+- JavaScript
+- TypeScript
 
 ## Preview
 

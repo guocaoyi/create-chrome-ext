@@ -9,6 +9,10 @@ Summary
   5. version stamp follow the yyyy.MM.dd format
 ```
 
+## 0.3.0 [2022.07.02]
+
+- feat: add solid framework templates
+
 ## 0.2.0 [2022.07.01]
 
 - doc: add preview image for useage

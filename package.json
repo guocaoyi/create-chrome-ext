@@ -36,8 +36,8 @@
     "react",
     "vue",
     "svelte",
+    "solidjs",
     "lit",
-    "vanilla",
     "preact"
   ],
   "bugs": {
