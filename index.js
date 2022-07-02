@@ -7,12 +7,87 @@ import minimist from 'minimist'
 import prompts from 'prompts'
 import mustache from 'mustache'
 import { fileURLToPath } from 'url'
-import { blue, lightBlue, yellow, cyan, magenta, green, red, reset } from 'kolorist'
+import {
+  blue,
+  lightBlue,
+  yellow,
+  lightYellow,
+  magenta,
+  green,
+  red,
+  lightCyan,
+  lightRed,
+  reset,
+} from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
 const Boilerplates = [
+  {
+    name: 'react',
+    color: lightCyan,
+    variants: [
+      {
+        name: 'react-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
+      {
+        name: 'react-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: 'vue',
+    color: green,
+    variants: [
+      {
+        name: 'vue-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
+      {
+        name: 'vue-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: 'solid',
+    color: blue,
+    variants: [
+      {
+        name: 'solid-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
+      {
+        name: 'solid-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: 'svelte',
+    color: lightRed,
+    variants: [
+      {
+        name: 'svelte-js',
+        display: 'JavaScript',
+        color: yellow,
+      },
+      {
+        name: 'svelte-ts',
+        display: 'TypeScript',
+        color: blue,
+      },
+    ],
+  },
   {
     name: 'lit',
     color: lightBlue,
@@ -46,40 +121,8 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'react',
-    color: cyan,
-    variants: [
-      {
-        name: 'react-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'react-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'svelte',
-    color: red,
-    variants: [
-      {
-        name: 'svelte-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'svelte-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
     name: 'vanilla',
-    color: yellow,
+    color: lightYellow,
     variants: [
       {
         name: 'vanilla-js',
@@ -88,22 +131,6 @@ const Boilerplates = [
       },
       {
         name: 'vanilla-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'vue',
-    color: green,
-    variants: [
-      {
-        name: 'vue-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'vue-ts',
         display: 'TypeScript',
         color: blue,
       },
@@ -139,7 +166,7 @@ async function init() {
   let author = '**'
   let template = argv.template || argv.t
 
-  const defaultTargetDir = 'crx-app'
+  const defaultTargetDir = 'my-crx'
   const getProjectName = () => (targetDir === '.' ? path.basename(path.resolve()) : targetDir)
 
   let result = {}
@@ -314,8 +341,8 @@ async function init() {
 /**
  * @param {string | undefined} targetDir
  */
-function formatTargetDir(targetDir) {
-  return targetDir?.trim().replace(/\/+$/g, '')
+function formatTargetDir(targetDir = '') {
+  return targetDir.trim().replace(/\/+$/g, '')
 }
 
 function copy(src, dest, opts = {}) {
