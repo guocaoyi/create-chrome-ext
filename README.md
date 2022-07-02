@@ -1,17 +1,15 @@
-# Create Chrome Ext (.crx)
+# Create Chrome Extension (.crx)
 
-[![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
 ![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fwithout_horn)
 
 > Next generation chrome extension generater
 
 - ⚡️ Lightning Fast HMR(use vite2)
-- 📦 Optimized Builds
 - 🗂 Multiple Framework Support
+- 📦 Optimized Builds
 - 📚 Documentation
 
 ## Installing
@@ -66,7 +64,7 @@ run:
 
 ## Supported Templates
 
-template presets include:
+framework presets include:
 
 - [React](https://reactjs.org/)
 - [Vue](https://vuejs.org/)
@@ -83,6 +81,7 @@ languages presets include:
 
 ## Preview
 
-![npm-create-cli](./docs/npm-create-cli.png)
-![npm-build](./docs/npm-build.png)
+![crx-run](./docs/crx-run.png)
+![crx-install](./docs/crx-install.png)
+![crx-build](./docs/crx-build.png)
 ![crx-preview](./docs/crx-preview.png)

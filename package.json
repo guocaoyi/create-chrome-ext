@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "description": "Scaffolding Your First Chrome Extension",
   "author": "yalda",
