@@ -1,0 +1,19 @@
+{
+  "name": "chrome-ext-starter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@builder.io/qwik": "0.0.18",
+    "@types/express": "4.17.13",
+    "@types/node": "17.0.17",
+    "express": "4.17.2",
+    "typescript": "4.5.5",
+    "vite": "2.8.6"
+  },
+}
