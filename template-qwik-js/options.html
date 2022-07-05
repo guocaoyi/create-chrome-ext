@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html>
-  <!-- THIS FILE IS ONLY USED DURING DEVELOPMENT -->
-  <!-- THIS FILE WILL NEVER SHOW UP IN PRODUCTION DEPLOYMENT -->
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Qwik Client Dev Mode</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/icons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome Extensioin + Qwik + JS + Vite App - Options</title>
   </head>
   <body>
-    <script type="module">
-      // Vite Dev Mode Only
-      import { render, jsx } from '@builder.io/qwik'
-      import { Main } from '/src/main.jsx'
-      render(document.body, jsx(Main, {}))
-    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/options/index.jsx"></script>
   </body>
 </html>

@@ -1,24 +1,9 @@
-import { component$, useStore, useRef, useEffect$ } from '@builder.io/qwik'
+import { component$, useStore } from '@builder.io/qwik'
 import './Popup.css'
 
-/**
- * Individual items of the component.
- *
- * It only rerenders if the user infarcts with it or if the item itself changes.
- */
-export interface Props {}
-
 export const Popup = component$(
-  (props: Props) => {
-    const state = useStore({ editing: false })
-
-    useEffect$((obs) => {
-      const { current } = obs(editInput)
-      if (current) {
-        current.focus()
-        current.selectionStart = current.selectionEnd = current.value.length
-      }
-    })
+  (props) => {
+    const crx = useStore('create-chrome-ext')
 
     return (
       <main>
@@ -33,7 +18,7 @@ export const Popup = component$(
     )
   },
   {
-    tagName: 'li',
+    name: 'Popup',
   },
 )
 

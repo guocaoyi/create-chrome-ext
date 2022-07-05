@@ -1,3 +1,3 @@
-console.info('chrome-ext template-preact-ts content script')
+console.info('chrome-ext template-qwik-ts content script')
 
 export {}
