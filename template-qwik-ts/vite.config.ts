@@ -8,21 +8,14 @@ import manifest from './src/manifest'
 
 export default defineConfig(({ mode }) => {
   return {
-    // build: {
-    //   rollupOptions: {
-    //     input: ['src/main.tsx', 'index.html'],
-    //     output: {
-    //       // Qwik tends to generate long chunk names
-    //       chunkFileNames: 'q-[hash].js',
-    //       assetFileNames: 'q-[hash].[ext]',
-    //     },
-    //   },
-    // },
     build: {
       emptyOutDir: true,
       outDir: 'build',
       rollupOptions: {
-        input: ['src/popup/index.tsx', 'popup.html', 'src/options/index.tsx', 'options.html'],
+        // input: {
+        //   popup: resolve(__dirname, 'popup.html'),
+        //   options: resolve(__dirname, 'options.html'),
+        // },
         output: {
           chunkFileNames: 'assets/chunk-[hash].js',
         },
@@ -31,8 +24,6 @@ export default defineConfig(({ mode }) => {
     plugins: [
       crx({ manifest }),
       // qwikVite({
-      //   // On `clientonly` mode, lets disable SSR in development, so app is fully client bootstrapped
-      //   ssr: mode === 'clientonly' ? false : undefined,
       //   srcDir: resolve('./src'),
       //   entryStrategy: {
       //     type: 'single',

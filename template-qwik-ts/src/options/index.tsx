@@ -1,5 +1,6 @@
-import { render } from 'preact'
+import { render, jsx } from '@builder.io/qwik'
+
 import { Options } from './Options'
 import './index.css'
 
-render(<Options />, document.getElementById('app') as HTMLElement)
+render(document.getElementById('app') ?? document.body, jsx(Options, {}))

@@ -18,15 +18,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build.client": "vite build --outDir server/public",
     "preview": "vite preview",
     "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.0.18",
+    "@builder.io/qwik": "^0.0.34",
     "@crxjs/vite-plugin": "^1.0.12",
     "@types/node": "17.0.17",
+    "express": "4.17.2",
     "prettier": "^2.7.1",
-    "typescript": "4.7.4",
-    "vite": "2.9.13"
+    "typescript": "^4.7.4",
+    "vite": "^2.9.13"
   }
 }
