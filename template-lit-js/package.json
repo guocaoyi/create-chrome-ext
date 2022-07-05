@@ -1,13 +1,20 @@
 {
-  "name": "chrome-ext-starter",
+  "name": "chrome-extension-lit-js",
   "version": "0.0.0",
-  "private": true,
   "author": "",
   "description": "",
   "type": "module",
-  "files": [
-    "dist"
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "lit",
+    "lit-element",
+    "vite",
+    "create-chrome-ext"
   ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -18,7 +25,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "vite": "^2.9.13"
   }
 }

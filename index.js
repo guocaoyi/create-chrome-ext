@@ -7,136 +7,64 @@ import minimist from 'minimist'
 import prompts from 'prompts'
 import mustache from 'mustache'
 import { fileURLToPath } from 'url'
-import {
-  blue,
-  lightBlue,
-  yellow,
-  lightYellow,
-  magenta,
-  green,
-  red,
-  lightCyan,
-  lightRed,
-  reset,
-} from 'kolorist'
+import { red, ansi256, reset } from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
-const Boilerplates = [
+const LangTempw = [
   {
-    name: 'react',
-    color: lightCyan,
-    variants: [
-      {
-        name: 'react-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'react-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
+    name: 'react-js',
+    display: 'JavaScript',
+    kolor: ansi256(226),
   },
   {
-    name: 'vue',
-    color: green,
-    variants: [
-      {
-        name: 'vue-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'vue-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'solid',
-    color: blue,
-    variants: [
-      {
-        name: 'solid-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'solid-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'svelte',
-    color: lightRed,
-    variants: [
-      {
-        name: 'svelte-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'svelte-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'lit',
-    color: lightBlue,
-    variants: [
-      {
-        name: 'lit-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'lit-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'preact',
-    color: magenta,
-    variants: [
-      {
-        name: 'preact-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'preact-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'vanilla',
-    color: lightYellow,
-    variants: [
-      {
-        name: 'vanilla-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'vanilla-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
+    name: 'react-ts',
+    display: 'TypeScript',
+    kolor: ansi256(25),
   },
 ]
+
+const Boilerplates = [
+  {
+    name: 'react', // star:191 wd:15097
+    kolor: ansi256(81),
+  },
+  {
+    name: 'vue', // star:197 wd:3223
+    kolor: ansi256(36),
+  },
+  {
+    name: 'svelte', // star:60.3 wd:339
+    kolor: ansi256(202),
+  },
+  {
+    name: 'preact', // star:32 wd:1385
+    kolor: ansi256(56),
+  },
+  {
+    name: 'solid', // star:19.9 wd:30
+    kolor: ansi256(25),
+  },
+  {
+    name: 'lit', // star:11.9 wd:306
+    kolor: ansi256(43),
+  },
+  {
+    name: 'qwik', // star:4.5 wd:822
+    kolor: ansi256(69),
+  },
+  // {
+  //   name: 'alpinejs', // star: wd:9
+  //   color: ansi256(1),
+  // },
+  {
+    name: 'vanilla', // star:0 wd:0
+    kolor: ansi256(230),
+  },
+]
+
+// .replace(/\S/, str => str.toUpperCase())
 
 const TEMPLATES = Boilerplates.map(
   (f) => (f.variants && f.variants.map((v) => v.name)) || [f.name],
@@ -224,7 +152,7 @@ async function init() {
               : reset('Framework:'),
           initial: 0,
           choices: Boilerplates.map((framework) => {
-            const frameworkColor = framework.color
+            const frameworkColor = framework.kolor
             return {
               title: frameworkColor(framework.name),
               value: framework,
@@ -238,7 +166,7 @@ async function init() {
           // @ts-ignore
           choices: (framework) =>
             framework.variants.map((variant) => {
-              const variantColor = variant.color
+              const variantColor = variant.kolor
               return {
                 title: variantColor(variant.name),
                 value: variant.name,

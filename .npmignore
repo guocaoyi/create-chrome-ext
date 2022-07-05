@@ -1,9 +1,18 @@
+# OS
+.DS_Store
+
+# debug & development
 __tests__
+*.spec.ts
+*.test.ts
+
+# npm
 node_modules
 yarn.lock
 package-lock.json
 pnpm-lock.yaml
-
-.gitignore
-.DS_Store
 *.log
+
+# others
+.gitignore
+.gitattributes

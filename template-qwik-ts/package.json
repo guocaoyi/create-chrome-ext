@@ -1,19 +1,32 @@
 {
-  "name": "chrome-ext-starter",
+  "name": "chrome-extension-qwik-ts",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
+  "description": "",
+  "type": "module",
   "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "qwik",
+    "build.io",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'"
+  },
   "devDependencies": {
     "@builder.io/qwik": "0.0.18",
-    "@types/express": "4.17.13",
+    "@crxjs/vite-plugin": "^1.0.12",
     "@types/node": "17.0.17",
-    "express": "4.17.2",
-    "typescript": "4.5.5",
-    "vite": "2.8.6"
-  },
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4",
+    "vite": "2.9.13"
+  }
 }

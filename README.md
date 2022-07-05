@@ -5,12 +5,13 @@
 ![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
 
-> Next generation chrome extension generater
+> Generating your chrome extension, multiple boilerplates supported!
 
-- ⚡️ Lightning Fast HMR(use vite2)
-- 🗂 Multiple Framework Support
-- 📦 Optimized Builds
-- 📚 Documentation
+- 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
+- 🥡 Out of Box
+- 🌈 Multiple Frontend Framework Supported(8+)
+- 🥢 Multiple Language Supported(TypeScript & JavaScript)
+- 🧶 Optimized Builds
 
 ## Installing
 
@@ -69,15 +70,16 @@ framework presets include:
 - [React](https://reactjs.org/)
 - [Vue](https://vuejs.org/)
 - [Svelte](https://svelte.dev/)
-- [Solid](https://www.solidjs.com/)
 - [Preact](https://preactjs.com/)
+- [Solid](https://www.solidjs.com/)
 - [Lit](https://lit.dev/)
+- [Qwik](https://qwik.builder.io/)
 - [Vanilla](http://vanilla-js.com/)
 
 languages presets include:
 
-- JavaScript
-- TypeScript
+- [JavaScript](https://www.javascript.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Preview
 
