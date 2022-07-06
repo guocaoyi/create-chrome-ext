@@ -12,59 +12,147 @@ import { red, ansi256, reset } from 'kolorist'
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
-const LangTempw = [
-  {
-    name: 'react-js',
-    display: 'JavaScript',
-    kolor: ansi256(226),
-  },
-  {
-    name: 'react-ts',
-    display: 'TypeScript',
-    kolor: ansi256(25),
-  },
-]
-
+/**
+ * sorted by total ranking
+ */
 const Boilerplates = [
   {
     name: 'react', // star:191 wd:15097
     kolor: ansi256(81),
+    variants: [
+      {
+        name: 'react-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'react-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   {
     name: 'vue', // star:197 wd:3223
     kolor: ansi256(36),
+    variants: [
+      {
+        name: 'vue-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'vue-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   {
     name: 'svelte', // star:60.3 wd:339
-    kolor: ansi256(202),
+    kolor: ansi256(203),
+    variants: [
+      {
+        name: 'svelte-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'svelte-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   {
     name: 'preact', // star:32 wd:1385
     kolor: ansi256(56),
+    variants: [
+      {
+        name: 'preact-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'preact-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   {
     name: 'solid', // star:19.9 wd:30
     kolor: ansi256(25),
+    variants: [
+      {
+        name: 'solid-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'solid-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   {
     name: 'lit', // star:11.9 wd:306
     kolor: ansi256(43),
+    variants: [
+      {
+        name: 'lit-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'lit-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   {
-    name: 'qwik', // star:4.5 wd:822
-    kolor: ansi256(69),
+    name: 'inferno', // star:15.5 wd:88
+    kolor: ansi256(202),
+    variants: [
+      {
+        name: 'inferno-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'inferno-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
   // {
-  //   name: 'alpinejs', // star: wd:9
+  //   name: 'alpinejs', // star: wd:93
   //   color: ansi256(1),
+  // },
+  // {
+  //   name: 'qwik', // star:4.5 wd:0.8
+  //   kolor: ansi256(69),
   // },
   {
     name: 'vanilla', // star:0 wd:0
     kolor: ansi256(230),
+    variants: [
+      {
+        name: 'vanilla-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'vanilla-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
   },
 ]
-
-// .replace(/\S/, str => str.toUpperCase())
 
 const TEMPLATES = Boilerplates.map(
   (f) => (f.variants && f.variants.map((v) => v.name)) || [f.name],
@@ -199,7 +287,7 @@ async function init() {
   // determine template
   template = variant || framework || template
 
-  console.log(`\nScaffolding project in ${root}...`)
+  console.log(`\nGenerating project in ${root}...`)
 
   // template boilerplate
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '..', `template-${template}`)
@@ -214,6 +302,7 @@ async function init() {
     now: new Date().format('yyyy.MM.dd'),
     //@ts-ignore
     nowYear: new Date().format('yyyy'),
+    framework: (framework.name || '').replace(/\S/, (str) => str.toUpperCase()),
   }
 
   const write = (file, content) => {

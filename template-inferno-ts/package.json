@@ -1,0 +1,34 @@
+{
+  "name": "chrome-extension-inferno-js",
+  "version": "0.0.0",
+  "author": "",
+  "description": "",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "inferno",
+    "infernojs",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "inferno": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.x",
+    "@babel/parser": "7.x",
+    "@crxjs/vite-plugin": "^1.0.12",
+    "vite-plugin-inferno": "0.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.13"
+  }
+}

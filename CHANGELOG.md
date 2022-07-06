@@ -9,9 +9,9 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
-## 0.4.0 [2022.07.05]
+## 0.4.0 [2022.07.06]
 
-- feat: add qwik framework templates
+- feat: add inferno framework templates
 - perf: update mustache CHANGELOG, README, DOCS, add tags & keywords
 - perf: cli framework selection use colors, and sorted by total ranking
 
