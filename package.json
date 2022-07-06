@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "description": "Generating your chrome extension, multiple boilerplates supported!",
   "author": "yalda",

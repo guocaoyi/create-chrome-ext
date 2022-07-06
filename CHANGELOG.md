@@ -14,6 +14,7 @@ Summary
 - feat: add inferno framework templates
 - perf: update mustache CHANGELOG, README, DOCS, add tags & keywords
 - perf: cli framework selection use colors, and sorted by total ranking
+- docs: preview use code image replace screenshot
 
 ## 0.3.0 [2022.07.02]
 
