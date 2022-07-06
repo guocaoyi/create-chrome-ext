@@ -2,12 +2,19 @@
 
 ```txt
 Summary
-  1. this document follow SemVer2.0 protocol
-  2. use a PATCH for release version, also includes beta\alpha\rc
+  1. document grouping follow 'SemVer2.0' protocol
+  2. use 'PATCH' as a minimum granularity
   3. use concise descriptions
-  4. type: feat\fix\update\perf\remove\other
-  5. version stamp follow the yyyy.MM.dd format
+  4. type: feat \ fix \ update \ perf \ remove \ docs \ chore
+  5. version timestamp follow the yyyy.MM.dd format
 ```
+
+## 0.4.0 [2022.07.06]
+
+- feat: add inferno framework templates
+- perf: update mustache CHANGELOG, README, DOCS, add tags & keywords
+- perf: cli framework selection use colors, and sorted by total ranking
+- docs: preview use code image replace screenshot
 
 ## 0.3.0 [2022.07.02]
 

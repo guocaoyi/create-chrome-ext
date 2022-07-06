@@ -1,10 +1,19 @@
 {
-  "name": "chrome-ext-starter",
+  "name": "chrome-extension-vanilla-js",
   "version": "0.0.0",
-  "private": true,
   "author": "",
   "description": "",
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "vanilla",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +24,7 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
     "@vitejs/plugin-react": "^1.3.2",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "vite": "^2.9.13"
   }
 }

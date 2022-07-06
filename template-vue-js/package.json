@@ -1,10 +1,19 @@
 {
-  "name": "chrome-ext-starter",
+  "name": "chrome-extension-vue-js",
   "version": "0.0.0",
-  "private": true,
   "author": "",
   "description": "",
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "vue",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,7 +26,7 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
     "@vitejs/plugin-vue": "^2.3.3",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "vite": "^2.9.13"
   }
 }

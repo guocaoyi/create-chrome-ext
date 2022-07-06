@@ -1,10 +1,19 @@
 {
-  "name": "chrome-ext-starter",
+  "name": "chrome-extension-svelte-ts",
   "version": "0.0.0",
-  "private": true,
   "author": "",
   "description": "",
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "svelte",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +24,7 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
     "@sveltejs/vite-plugin-svelte": "1.0.0-next.49",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.44.0",
     "svelte-preprocess": "^4.9.8",

@@ -7,132 +7,148 @@ import minimist from 'minimist'
 import prompts from 'prompts'
 import mustache from 'mustache'
 import { fileURLToPath } from 'url'
-import {
-  blue,
-  lightBlue,
-  yellow,
-  lightYellow,
-  magenta,
-  green,
-  red,
-  lightCyan,
-  lightRed,
-  reset,
-} from 'kolorist'
+import { red, ansi256, reset } from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 
+/**
+ * sorted by total ranking
+ */
 const Boilerplates = [
   {
-    name: 'react',
-    color: lightCyan,
+    name: 'react', // star:191 wd:15097
+    kolor: ansi256(81),
     variants: [
       {
         name: 'react-js',
         display: 'JavaScript',
-        color: yellow,
+        kolor: ansi256(226),
       },
       {
         name: 'react-ts',
         display: 'TypeScript',
-        color: blue,
+        kolor: ansi256(25),
       },
     ],
   },
   {
-    name: 'vue',
-    color: green,
+    name: 'vue', // star:197 wd:3223
+    kolor: ansi256(36),
     variants: [
       {
         name: 'vue-js',
         display: 'JavaScript',
-        color: yellow,
+        kolor: ansi256(226),
       },
       {
         name: 'vue-ts',
         display: 'TypeScript',
-        color: blue,
+        kolor: ansi256(25),
       },
     ],
   },
   {
-    name: 'solid',
-    color: blue,
-    variants: [
-      {
-        name: 'solid-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'solid-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'svelte',
-    color: lightRed,
+    name: 'svelte', // star:60.3 wd:339
+    kolor: ansi256(203),
     variants: [
       {
         name: 'svelte-js',
         display: 'JavaScript',
-        color: yellow,
+        kolor: ansi256(226),
       },
       {
         name: 'svelte-ts',
         display: 'TypeScript',
-        color: blue,
+        kolor: ansi256(25),
       },
     ],
   },
   {
-    name: 'lit',
-    color: lightBlue,
-    variants: [
-      {
-        name: 'lit-js',
-        display: 'JavaScript',
-        color: yellow,
-      },
-      {
-        name: 'lit-ts',
-        display: 'TypeScript',
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: 'preact',
-    color: magenta,
+    name: 'preact', // star:32 wd:1385
+    kolor: ansi256(56),
     variants: [
       {
         name: 'preact-js',
         display: 'JavaScript',
-        color: yellow,
+        kolor: ansi256(226),
       },
       {
         name: 'preact-ts',
         display: 'TypeScript',
-        color: blue,
+        kolor: ansi256(25),
       },
     ],
   },
   {
-    name: 'vanilla',
-    color: lightYellow,
+    name: 'solid', // star:19.9 wd:30
+    kolor: ansi256(25),
+    variants: [
+      {
+        name: 'solid-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'solid-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
+  },
+  {
+    name: 'lit', // star:11.9 wd:306
+    kolor: ansi256(43),
+    variants: [
+      {
+        name: 'lit-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'lit-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
+  },
+  {
+    name: 'inferno', // star:15.5 wd:88
+    kolor: ansi256(202),
+    variants: [
+      {
+        name: 'inferno-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'inferno-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
+  },
+  // {
+  //   name: 'alpinejs', // star: wd:93
+  //   color: ansi256(1),
+  // },
+  // {
+  //   name: 'qwik', // star:4.5 wd:0.8
+  //   kolor: ansi256(69),
+  // },
+  {
+    name: 'vanilla', // star:0 wd:0
+    kolor: ansi256(230),
     variants: [
       {
         name: 'vanilla-js',
         display: 'JavaScript',
-        color: yellow,
+        kolor: ansi256(226),
       },
       {
         name: 'vanilla-ts',
         display: 'TypeScript',
-        color: blue,
+        kolor: ansi256(25),
       },
     ],
   },
@@ -224,7 +240,7 @@ async function init() {
               : reset('Framework:'),
           initial: 0,
           choices: Boilerplates.map((framework) => {
-            const frameworkColor = framework.color
+            const frameworkColor = framework.kolor
             return {
               title: frameworkColor(framework.name),
               value: framework,
@@ -238,7 +254,7 @@ async function init() {
           // @ts-ignore
           choices: (framework) =>
             framework.variants.map((variant) => {
-              const variantColor = variant.color
+              const variantColor = variant.kolor
               return {
                 title: variantColor(variant.name),
                 value: variant.name,
@@ -271,7 +287,7 @@ async function init() {
   // determine template
   template = variant || framework || template
 
-  console.log(`\nScaffolding project in ${root}...`)
+  console.log(`\nGenerating project in ${root}...`)
 
   // template boilerplate
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '..', `template-${template}`)
@@ -286,6 +302,7 @@ async function init() {
     now: new Date().format('yyyy.MM.dd'),
     //@ts-ignore
     nowYear: new Date().format('yyyy'),
+    framework: (framework.name || '').replace(/\S/, (str) => str.toUpperCase()),
   }
 
   const write = (file, content) => {

@@ -1,8 +1,8 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
-  "description": "Scaffolding Your First Chrome Extension",
+  "description": "Generating your chrome extension, multiple boilerplates supported!",
   "author": "yalda",
   "license": "MIT",
   "main": "index.js",
@@ -27,18 +27,18 @@
   },
   "keywords": [
     "chrome",
-    "crx",
-    "extension",
     "chrome-extension",
-    "creater",
-    "create-crx",
-    "create-chrome-extension",
+    "template",
+    "boilerplate",
+    "create-chrome-ext",
     "react",
     "vue",
     "svelte",
-    "solidjs",
+    "preact",
+    "solid",
     "lit",
-    "preact"
+    "qwik",
+    "vanilla"
   ],
   "bugs": {
     "url": "https://github.com/guocaoyi/create-chrome-ext/issues"
@@ -50,11 +50,9 @@
     "mustache": "^4.2.0",
     "prompts": "^2.4.2"
   },
-  "devDependencies": {
-    "@types/node": "14.18.18",
-    "prettier": "2.7.1"
-  },
   "optionalDependencies": {
+    "@types/node": "14.18.18",
+    "prettier": "^2.7.1",
     "svelte": "^3.44.0",
     "prettier-plugin-svelte": "^2.7.0"
   }
