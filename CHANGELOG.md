@@ -9,6 +9,10 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.5.0 [2022.07.07]
+
+- feat: add alpine framework templates
+
 ## 0.4.0 [2022.07.06]
 
 - feat: add inferno framework templates
