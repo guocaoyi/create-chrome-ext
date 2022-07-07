@@ -9,6 +9,11 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.5.0 [2022.07.xx]
+
+- feat: add alpine framework templates
+- update: add @types/chrome for definitions
+
 ## 0.4.0 [2022.07.06]
 
 - feat: add inferno framework templates

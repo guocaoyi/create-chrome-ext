@@ -128,10 +128,22 @@ const Boilerplates = [
       },
     ],
   },
-  // {
-  //   name: 'alpinejs', // star: wd:93
-  //   color: ansi256(1),
-  // },
+  {
+    name: 'alpine', // star: wd:93
+    kolor: ansi256(116),
+    variants: [
+      {
+        name: 'inferno-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'inferno-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
+  },
   // {
   //   name: 'qwik', // star:4.5 wd:0.8
   //   kolor: ansi256(69),

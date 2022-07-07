@@ -19,17 +19,14 @@
 > Node >= 14.18.0
 
 ```bash
-# with npm
-λ npm create chrome-ext@latest
+# use npm-create command, or use pnpm | yarn
+λ npm create chrome-ext
 
-# or with pnpm
-λ pnpm create chrome-ext
-
-# or with yarn
-λ yarn create chrome-ext
-
-# or with npx
+# or use npx command
 λ npx create-chrome-ext
+
+# or use npm-init command
+λ npm init create-chrome-ext
 ```
 
 ## Usage
@@ -50,8 +47,7 @@ You can also directly specify the project name and the template you want to use 
 λ pnpm create chrome-ext my-crx-app --template vanilla-ts
 ```
 
-You can also generator the project with `crx` cli.
-run:
+You can also generator the project with `crx` cli, run:
 
 ```bash
 λ npm install create-chrome-ext --global
@@ -68,14 +64,15 @@ run:
 
 framework presets include:
 
-- [React](https://reactjs.org/)
-- [Vue](https://vuejs.org/)
-- [Svelte](https://svelte.dev/)
-- [Preact](https://preactjs.com/)
-- [Solid](https://www.solidjs.com/)
-- [Lit](https://lit.dev/)
-- [Inferno](https://www.infernojs.org/)
-- [Vanilla](http://vanilla-js.com/)
+- [React](https://reactjs.org)
+- [Vue](https://vuejs.org)
+- [Svelte](https://svelte.dev)
+- [Preact](https://preactjs.com)
+- [Solid](https://www.solidjs.com)
+- [Lit](https://lit.dev)
+- [Inferno](https://www.infernojs.org)
+- [Alpine](https://alpinejs.dev)
+- [Vanilla](http://vanilla-js.com)
 
 languages presets include:
 

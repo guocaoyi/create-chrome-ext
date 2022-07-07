@@ -1,5 +1,5 @@
 {
-  "name": "chrome-extension-solod-js",
+  "name": "chrome-extension-alpine-js",
   "version": "0.0.0",
   "author": "",
   "description": "",
@@ -7,8 +7,8 @@
   "license": "MIT",
   "keywords": [
     "chrome-extension",
-    "solid",
-    "solidjs",
+    "alpine",
+    "alpinejs",
     "vite",
     "create-chrome-ext"
   ],
@@ -18,16 +18,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'"
-  },
-  "devDependencies": {
-    "@crxjs/vite-plugin": "^1.0.12",
-    "prettier": "^2.7.1",
-    "vite": "^2.9.13",
-    "vite-plugin-solid": "^2.2.6"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "solid-js": "^1.4.2"
+    "alpinejs": "^3.10.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.193",
+    "@crxjs/vite-plugin": "^1.0.12",
+    "vite": "^2.9.13"
   }
 }
