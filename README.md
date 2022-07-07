@@ -69,9 +69,9 @@ framework presets include:
 - [Svelte](https://svelte.dev)
 - [Preact](https://preactjs.com)
 - [Solid](https://www.solidjs.com)
+- [Alpine](https://alpinejs.dev)
 - [Lit](https://lit.dev)
 - [Inferno](https://www.infernojs.org)
-- [Alpine](https://alpinejs.dev)
 - [Vanilla](http://vanilla-js.com)
 
 languages presets include:

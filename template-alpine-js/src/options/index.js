@@ -1,17 +1,21 @@
 import Alpine from 'alpinejs'
 
-import './index.css'
+const dropdown = () => {
+  return {
+    show: false,
+    open() {
+      this.show = true
+    },
+    close() {
+      this.show = false
+    },
+    isOpen() {
+      return this.show === true
+    },
+  }
+}
 
-window.Alpine = Alpine
+Reflect.set(window, 'dropdown', dropdown)
 
 Alpine.start()
-
-Alpine.data('dropdown', () => ({
-  open: false,
-
-  toggle() {
-    this.open = !this.open
-  },
-}))
-
-console.info('option index.js loaded')
+window.Alpine = Alpine

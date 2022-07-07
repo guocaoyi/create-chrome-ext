@@ -19,7 +19,7 @@
     "index.js"
   ],
   "scripts": {
-    "fmt": "prettier --write '**/*.{vue,svelte,js,jsx,ts,tsx,json,css,md}'"
+    "fmt": "prettier --write '**/*.{vue,svelte,html,js,jsx,ts,tsx,json,css,md}'"
   },
   "repository": {
     "type": "git",
@@ -31,11 +31,13 @@
     "template",
     "boilerplate",
     "create-chrome-ext",
+    "create-chrome-extension",
     "react",
     "vue",
     "svelte",
     "preact",
     "solid",
+    "alpinejs",
     "lit",
     "qwik",
     "vanilla"

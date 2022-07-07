@@ -97,7 +97,23 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'lit', // star:11.9 wd:306
+    name: 'alpine', // star:21.1 wd:93
+    kolor: ansi256(116),
+    variants: [
+      {
+        name: 'inferno-js',
+        display: 'JavaScript',
+        kolor: ansi256(226),
+      },
+      {
+        name: 'inferno-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
+  },
+  {
+    name: 'lit', // star:11.9 wd:300
     kolor: ansi256(43),
     variants: [
       {
@@ -115,22 +131,6 @@ const Boilerplates = [
   {
     name: 'inferno', // star:15.5 wd:88
     kolor: ansi256(202),
-    variants: [
-      {
-        name: 'inferno-js',
-        display: 'JavaScript',
-        kolor: ansi256(226),
-      },
-      {
-        name: 'inferno-ts',
-        display: 'TypeScript',
-        kolor: ansi256(25),
-      },
-    ],
-  },
-  {
-    name: 'alpine', // star: wd:93
-    kolor: ansi256(116),
     variants: [
       {
         name: 'inferno-js',
