@@ -299,7 +299,7 @@ async function init() {
   // determine template
   template = variant || framework || template
 
-  console.log(`\nGenerating project in ${root}...`)
+  console.log(`\nScaffolding project in ${root}...`)
 
   // template boilerplate
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '..', `template-${template}`)

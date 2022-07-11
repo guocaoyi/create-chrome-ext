@@ -6,7 +6,7 @@
 ![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
 
-> Generating your chrome extension, multiple boilerplates supported!
+> Scaffolding your chrome extension, multiple boilerplates supported!
 
 - 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
 - 🥡 Out of Box

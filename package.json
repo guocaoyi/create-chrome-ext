@@ -1,8 +1,8 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "type": "module",
-  "description": "Generating your chrome extension, multiple boilerplates supported!",
+  "description": "Scaffolding your chrome extension, multiple boilerplates supported!",
   "author": "yalda",
   "license": "MIT",
   "main": "index.js",
