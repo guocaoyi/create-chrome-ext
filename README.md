@@ -10,9 +10,11 @@
 
 - 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
 - 🥡 Out of Box
-- 🌈 Multiple Frontend Framework Supported(8+)
-- 🥢 Multiple Language Supported(TypeScript & JavaScript)
+- 🌈 Multiple Frontend Framework Supported (9+)
+- 🥢 Multiple Language Supported (TypeScript & JavaScript)
 - 🧶 Optimized Builds
+- 💅 UI & Design
+- 🌗 Light & Dark Mode
 
 ## Installing
 
@@ -26,7 +28,7 @@
 λ npx create-chrome-ext
 
 # or use npm-init command
-λ npm init create-chrome-ext
+λ npm init chrome-ext
 ```
 
 ## Usage
@@ -72,9 +74,10 @@ framework presets include:
 - [Alpine](https://alpinejs.dev)
 - [Lit](https://lit.dev)
 - [Inferno](https://www.infernojs.org)
+- [Qwik](https://qwik.builder.io)
 - [Vanilla](http://vanilla-js.com)
 
-languages presets include:
+languages supported:
 
 - [JavaScript](https://www.javascript.com/)
 - [TypeScript](https://www.typescriptlang.org/)

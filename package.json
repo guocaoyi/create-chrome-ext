@@ -41,6 +41,7 @@
     "preact",
     "solidjs",
     "alpinejs",
+    "inferno",
     "lit",
     "qwik",
     "vanilla"

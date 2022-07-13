@@ -9,7 +9,7 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
-## 0.6.0 [2022.07.12]
+## 0.6.0 [2022.07.16]
 
 - feat: add qwik framework templates
 - fix: fix lit framework boilerplate, start error
