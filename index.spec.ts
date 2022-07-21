@@ -77,7 +77,7 @@ test('successfully scaffolds a project based on vue starter template', () => {
   const generatedFiles = readdirSync(genPath).sort()
 
   // Assertions
-  expect(stdout).toContain(`Generating project in ${genPath}`)
+  expect(stdout).toContain(`Scaffolding project in ${genPath}`)
   expect(templateFiles).toEqual(generatedFiles)
 })
 
@@ -88,6 +88,6 @@ test('works with the -t alias', () => {
   const generatedFiles = readdirSync(genPath).sort()
 
   // Assertions
-  expect(stdout).toContain(`Generating project in ${genPath}`)
+  expect(stdout).toContain(`Scaffolding project in ${genPath}`)
   expect(templateFiles).toEqual(generatedFiles)
 })
