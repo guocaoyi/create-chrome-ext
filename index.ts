@@ -170,11 +170,11 @@ const TEMPLATES = Boilerplates.map(
   (f) => (f.variants && f.variants.map((v) => v.name)) || [f.name],
 ).reduce((a, b) => a.concat(b), [])
 
-const renameFiles = {}
+const renameFiles: { [K: string]: any } = {}
 
 // @ts-ignore
 Date.prototype.format = function (fmt) {
-  const o = {
+  const o: any = {
     'M+': this.getMonth() + 1,
     'd+': this.getDate(),
   }
@@ -197,7 +197,7 @@ async function init() {
   const defaultTargetDir = 'my-crx'
   const getProjectName = () => (targetDir === '.' ? path.basename(path.resolve()) : targetDir)
 
-  let result = {}
+  let result: any = {}
 
   try {
     result = await prompts(
@@ -212,6 +212,7 @@ async function init() {
           },
         },
         {
+          //@ts-ignore
           type: () => (!fs.existsSync(targetDir) || isEmpty(targetDir) ? null : 'confirm'),
           name: 'overwrite',
           message: () =>
@@ -228,7 +229,9 @@ async function init() {
           },
         },
         {
+          //@ts-ignore
           type: (_, opts = {}) => {
+            //@ts-ignore
             if (opts.overwrite === false) {
               throw new Error(red('✖') + ' Operation cancelled')
             }
@@ -237,9 +240,11 @@ async function init() {
           name: 'overwriteChecker',
         },
         {
+          //@ts-ignore
           type: () => (isValidPackageName(getProjectName()) ? null : 'text'),
           name: 'packageName',
           message: reset('Package name:'),
+          //@ts-ignore
           initial: () => toValidPackageName(getProjectName()),
           validate: (dir) => isValidPackageName(dir) || 'Invalid package.json name',
         },
@@ -251,6 +256,7 @@ async function init() {
               ? reset(`"${template}" isn't a valid template. Please choose from below: `)
               : reset('Framework:'),
           initial: 0,
+          //@ts-ignore
           choices: Boilerplates.map((framework) => {
             const frameworkColor = framework.kolor
             return {
@@ -260,11 +266,13 @@ async function init() {
           }),
         },
         {
+          //@ts-ignore
           type: (framework) => (framework && framework.variants ? 'select' : null),
           name: 'variant',
           message: reset('Language:'),
           // @ts-ignore
           choices: (framework) =>
+            //@ts-ignore
             framework.variants.map((variant) => {
               const variantColor = variant.kolor
               return {
@@ -280,8 +288,8 @@ async function init() {
         },
       },
     )
-  } catch (cancelled) {
-    console.log(cancelled.message)
+  } catch (error) {
+    console.log(error)
     return
   }
 
@@ -302,9 +310,11 @@ async function init() {
   console.log(`\nScaffolding project in ${root}...`)
 
   // template boilerplate
+  //@ts-ignore
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '..', `template-${template}`)
 
   // mustache
+  //@ts-ignore
   const mustacheDir = path.resolve(fileURLToPath(import.meta.url), '..', 'mustache')
 
   const opts = {
@@ -314,10 +324,10 @@ async function init() {
     now: new Date().format('yyyy.MM.dd'),
     //@ts-ignore
     nowYear: new Date().format('yyyy'),
-    framework: (framework.name || '').replace(/\S/, (str) => str.toUpperCase()),
+    framework: (framework.name || '').replace(/\S/, (str: string) => str.toUpperCase()),
   }
 
-  const write = (file, content) => {
+  const write = (file: string, content?: string | NodeJS.ArrayBufferView) => {
     const targetPath = renameFiles[file]
       ? path.join(root, renameFiles[file])
       : path.join(root, file)
@@ -330,7 +340,7 @@ async function init() {
     }
   }
 
-  const files = fs.readdirSync(templateDir)
+  const files: string[] = fs.readdirSync(templateDir)
   for (const file of files.filter((f) => f !== 'package.json')) {
     write(file)
   }
@@ -370,11 +380,11 @@ async function init() {
 /**
  * @param {string | undefined} targetDir
  */
-function formatTargetDir(targetDir = '') {
+function formatTargetDir(targetDir: string | undefined = '') {
   return targetDir.trim().replace(/\/+$/g, '')
 }
 
-function copy(src, dest, opts = {}) {
+function copy(src: string, dest: string, opts = {}) {
   const stat = fs.statSync(src)
   if (stat.isDirectory()) {
     copyDir(src, dest)
@@ -389,16 +399,16 @@ function copy(src, dest, opts = {}) {
 }
 
 /**
- * @param {string} projectName
+ * is valid package name
  */
-function isValidPackageName(projectName) {
+function isValidPackageName(projectName: string) {
   return /^(?:@[a-z0-9-*~][a-z0-9-*._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(projectName)
 }
 
 /**
- * @param {string} projectName
+ * transfer to valid package name
  */
-function toValidPackageName(projectName) {
+function toValidPackageName(projectName: string) {
   return projectName
     .trim()
     .toLowerCase()
@@ -408,10 +418,9 @@ function toValidPackageName(projectName) {
 }
 
 /**
- * @param {string} srcDir
- * @param {string} destDir
+ * copy direction
  */
-function copyDir(srcDir, destDir) {
+function copyDir(srcDir: string, destDir: string) {
   fs.mkdirSync(destDir, { recursive: true })
   for (const file of fs.readdirSync(srcDir)) {
     const srcFile = path.resolve(srcDir, file)
@@ -421,17 +430,17 @@ function copyDir(srcDir, destDir) {
 }
 
 /**
- * @param {string} path
+ * direction is empty
  */
-function isEmpty(path) {
+function isEmpty(path: string) {
   const files = fs.readdirSync(path)
   return files.length === 0 || (files.length === 1 && files[0] === '.git')
 }
 
 /**
- * @param {string} dir
+ * empty direction
  */
-function emptyDir(dir) {
+function emptyDir(dir: string) {
   if (!fs.existsSync(dir)) {
     return
   }
@@ -444,7 +453,7 @@ function emptyDir(dir) {
  * @param {string | undefined} userAgent process.env.npm_config_user_agent
  * @returns object | undefined
  */
-function pkgFromUserAgent(userAgent) {
+function pkgFromUserAgent(userAgent: any) {
   if (!userAgent) return undefined
   const pkgSpec = userAgent.split(' ')[0]
   const pkgSpecArr = pkgSpec.split('/')
