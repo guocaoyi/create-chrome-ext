@@ -1,5 +1,7 @@
 # Create Chrome Extension (.crx)
 
+![crx-preview](./docs/crx-preview.png)
+
 [![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
@@ -7,8 +9,6 @@
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
 
 > Scaffolding your chrome extension, multiple boilerplates supported!
-
-![crx-preview](./docs/crx-preview.png)
 
 - 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
 - 🥡 Out of Box
@@ -71,7 +71,7 @@ framework presets include:
 
 languages supported:
 
-[JavaScript](https://www.javascript.com/) | [TypeScript](https://www.typescriptlang.org/)
+[JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/)
 
 ## Preview
 
