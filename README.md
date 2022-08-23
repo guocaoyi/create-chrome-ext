@@ -8,12 +8,13 @@
 
 > Scaffolding your chrome extension, multiple boilerplates supported!
 
+![crx-preview](./docs/crx-preview.png)
+
 - 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
 - 🥡 Out of Box
 - 🌈 Multiple Frontend Framework Supported (9+)
 - 🥢 Multiple Language Supported (TypeScript & JavaScript)
 - 🧶 Optimized Builds
-- 💅 UI & Design
 - 🌗 Light & Dark Mode
 
 ## Installing
@@ -66,25 +67,14 @@ You can also generator the project with `crx` cli, run:
 
 framework presets include:
 
-- [React](https://reactjs.org)
-- [Vue](https://vuejs.org)
-- [Svelte](https://svelte.dev)
-- [Preact](https://preactjs.com)
-- [Solid](https://www.solidjs.com)
-- [Alpine](https://alpinejs.dev)
-- [Lit](https://lit.dev)
-- [Inferno](https://www.infernojs.org)
-- [Qwik](https://qwik.builder.io)
-- [Vanilla](http://vanilla-js.com)
+[React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Qwik](https://qwik.builder.io) · [Vanilla](http://vanilla-js.com)
 
 languages supported:
 
-- [JavaScript](https://www.javascript.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+[JavaScript](https://www.javascript.com/) | [TypeScript](https://www.typescriptlang.org/)
 
 ## Preview
 
 ![crx-run](./docs/crx-run.png)
 ![crx-install](./docs/crx-install.png)
 ![crx-build](./docs/crx-build.png)
-![crx-preview](./docs/crx-preview.png)
