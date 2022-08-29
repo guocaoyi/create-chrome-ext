@@ -1,14 +1,32 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.2.0",
+  "version": "0.6.1",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
+    "@types/minimist": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@types/minimist/-/minimist-1.2.2.tgz",
+      "integrity": "sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==",
+      "optional": true
+    },
+    "@types/mustache": {
+      "version": "4.2.1",
+      "resolved": "https://registry.npmjs.org/@types/mustache/-/mustache-4.2.1.tgz",
+      "integrity": "sha512-gFAlWL9Ik21nJioqjlGCnNYbf9zHi0sVbaZ/1hQEBcCEuxfLJDvz4bVJSV6v6CUaoLOz0XEIoP7mSrhJ6o237w==",
+      "optional": true
+    },
     "@types/node": {
-      "version": "14.18.18",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-14.18.18.tgz",
-      "integrity": "sha512-B9EoJFjhqcQ9OmQrNorItO+OwEOORNn3S31WuiHvZY/dm9ajkB7AKD/8toessEtHHNL+58jofbq7hMMY9v4yig==",
-      "dev": true
+      "version": "14.18.25",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-14.18.25.tgz",
+      "integrity": "sha512-9pLfceRSrKIsv/MISN6RoFWTIzka36Uk2Uuf5a8cHyDYhEgl5Hm5dXoe621KULeBjt+cFsY18mILsWWtJeG80w==",
+      "optional": true
+    },
+    "@types/prompts": {
+      "version": "2.4.0",
+      "resolved": "https://registry.npmjs.org/@types/prompts/-/prompts-2.4.0.tgz",
+      "integrity": "sha512-7th8Opn+0XlN0O6qzO7dXOPwL6rigq/EwRS2DntaTHwSw8cLaYKeAPt5dWEKHSL+ffVSUl1itTPUC06+FlsV4Q==",
+      "optional": true
     },
     "kleur": {
       "version": "3.0.3",
@@ -34,7 +52,7 @@
       "version": "2.7.1",
       "resolved": "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz",
       "integrity": "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==",
-      "dev": true
+      "optional": true
     },
     "prettier-plugin-svelte": {
       "version": "2.7.0",
@@ -57,9 +75,9 @@
       "integrity": "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="
     },
     "svelte": {
-      "version": "3.48.0",
-      "resolved": "https://registry.npmjs.org/svelte/-/svelte-3.48.0.tgz",
-      "integrity": "sha512-fN2YRm/bGumvjUpu6yI3BpvZnpIm9I6A7HR4oUNYd7ggYyIwSA/BX7DJ+UXXffLp6XNcUijyLvttbPVCYa/3xQ==",
+      "version": "3.49.0",
+      "resolved": "https://registry.npmjs.org/svelte/-/svelte-3.49.0.tgz",
+      "integrity": "sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==",
       "optional": true
     }
   }

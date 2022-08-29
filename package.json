@@ -19,7 +19,8 @@
     "index.js"
   ],
   "scripts": {
-    "fmt": "prettier --write '**/*.{vue,svelte,html,js,jsx,ts,tsx,json,css,md}'"
+    "fmt": "prettier --write '**/*.{vue,svelte,html,js,jsx,ts,tsx,json,css,md}'",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -57,7 +58,10 @@
     "prompts": "^2.4.2"
   },
   "optionalDependencies": {
-    "@types/node": "14.18.18",
+    "@types/node": "^14.18.18",
+    "@types/prompts": "^2.4.0",
+    "@types/mustache": "^4.2.1",
+    "@types/minimist": "^1.2.2",
     "prettier": "^2.7.1",
     "svelte": "^3.44.0",
     "prettier-plugin-svelte": "^2.7.0"

@@ -9,31 +9,35 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.7.0 [2022.08.26]
+
+- ci: update github action, add npm-build
+
 ## 0.6.0 [2022.07.16]
 
-- feat: add qwik framework templates
+- feat: add qwik framework boilerplate
 - fix: fix lit framework boilerplate, start error
 - update: docs preview code image
 
 ## 0.5.0 [2022.07.07]
 
-- feat: add alpine framework templates
+- feat: add alpine framework boilerplate
 
 ## 0.4.0 [2022.07.06]
 
-- feat: add inferno framework templates
+- feat: add inferno framework boilerplate
 - perf: update mustache CHANGELOG, README, DOCS, add tags & keywords
 - perf: cli framework selection use colors, and sorted by total ranking
 - docs: preview use code image replace screenshot
 
 ## 0.3.0 [2022.07.02]
 
-- feat: add solid framework templates
+- feat: add solid framework boilerplate
 
 ## 0.2.0 [2022.07.01]
 
 - doc: add preview image for useage
-- fix: vue-ts templates, build error
+- fix: vue-ts boilerplate, build error
 
 ## 0.1.0 [2022.06.30]
 
@@ -46,4 +50,4 @@ Summary
 - feat: boilerplate for create chrome extension with vite2
 - feat: react-js\react-ts\svelte-ts\svelte-js\vue-ts\vue-js boilerplate
 - feat: vanilla-js\vanilla-ts\preact-js\preact-ts boilerplate
-- feat: add mustache templates
+- feat: add mustache boilerplate
