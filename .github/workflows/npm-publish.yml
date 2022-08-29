@@ -30,6 +30,9 @@ jobs:
       - name: NPM CI
         run: npm ci
 
+      - name: Build
+        run: npm run build
+
       - name: Publish to NPM
         run: npm publish || true
         env:
