@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "type": "module",
   "description": "Scaffolding your chrome extension, multiple boilerplates supported!",
   "author": "yalda",
@@ -50,7 +50,7 @@
   "bugs": {
     "url": "https://github.com/guocaoyi/create-chrome-ext/issues"
   },
-  "homepage": "https://crx.yalda.cn",
+  "homepage": "https://github.com/guocaoyi/create-chrome-ext",
   "dependencies": {
     "kolorist": "^1.5.1",
     "minimist": "^1.2.6",
@@ -63,7 +63,8 @@
     "@types/mustache": "^4.2.1",
     "@types/minimist": "^1.2.2",
     "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.44.0",
-    "prettier-plugin-svelte": "^2.7.0"
+    "typescript": "^4.8.0"
   }
 }
