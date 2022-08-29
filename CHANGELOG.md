@@ -11,9 +11,7 @@ Summary
 
 ## 0.7.0 [2022.08.26]
 
-- doc: update readme
-- fix: fix lit \ qwik framework boilerplate, start error
-- feat: support vue boilerplate popup \ newtab pages
+- ci: update github action, add npm-build
 
 ## 0.6.0 [2022.07.16]
 
