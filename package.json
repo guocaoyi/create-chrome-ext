@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "type": "module",
   "description": "Scaffolding your chrome extension, multiple boilerplates supported!",
   "author": "yalda",
@@ -16,7 +16,8 @@
   "files": [
     "mustache",
     "template-*",
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "scripts": {
     "fmt": "prettier --write '**/*.{vue,svelte,html,js,jsx,ts,tsx,json,css,md}'",
