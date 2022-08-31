@@ -1,6 +1,6 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.6.1",
+  "version": "0.7.1",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -78,6 +78,12 @@
       "version": "3.49.0",
       "resolved": "https://registry.npmjs.org/svelte/-/svelte-3.49.0.tgz",
       "integrity": "sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==",
+      "optional": true
+    },
+    "typescript": {
+      "version": "4.8.2",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.2.tgz",
+      "integrity": "sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==",
       "optional": true
     }
   }

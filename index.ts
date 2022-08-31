@@ -128,6 +128,10 @@ const Boilerplates = [
       },
     ],
   },
+  // {
+  //   name: 'stencil', // star:11 wd:419
+  //   kolor: ansi256(69),
+  // },
   {
     name: 'inferno', // star:15.5 wd:88
     kolor: ansi256(202),
@@ -144,10 +148,6 @@ const Boilerplates = [
       },
     ],
   },
-  // {
-  //   name: 'qwik', // star:4.5 wd:0.8
-  //   kolor: ansi256(69),
-  // },
   {
     name: 'vanilla', // star:0 wd:0
     kolor: ansi256(230),
