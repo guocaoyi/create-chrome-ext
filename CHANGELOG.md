@@ -9,6 +9,10 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.8.1 [2022.09.09]
+
+- docs: add zn_CN readme
+
 ## 0.8.0 [2022.09.05]
 
 - remove: qwik framework boilerplate
