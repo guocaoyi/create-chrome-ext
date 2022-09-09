@@ -17,6 +17,8 @@
 - 🧶 Optimized Builds
 - 🌗 Light & Dark Mode
 
+[EN](./README.md) · [中文](./README_zh.md)
+
 ## Installing
 
 > Node >= 14.18.0
