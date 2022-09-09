@@ -1,9 +1,10 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import * as fs from 'node:fs'
+import * as path from 'node:path'
+import * as process from 'node:process'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import mustache from 'mustache'
-import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'node:url'
 import { red, ansi256, reset } from 'kolorist'
 
 const argv = minimist(process.argv.slice(2), { string: ['_'] })

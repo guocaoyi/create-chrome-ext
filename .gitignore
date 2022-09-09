@@ -14,8 +14,8 @@ pnpm-lock.yaml
 # ignore compiled files
 build
 types
-index.js
-!**/index.js
+*.js
+!template-*/*.js
 
 # ignore ide settings
 .idea

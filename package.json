@@ -16,6 +16,7 @@
   "files": [
     "mustache",
     "template-*",
+    "bin.js",
     "index.js",
     "README.md"
   ],
