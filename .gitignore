@@ -15,6 +15,7 @@ pnpm-lock.yaml
 build
 types
 index.js
+!**/index.js
 
 # ignore ide settings
 .idea

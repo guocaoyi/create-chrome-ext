@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/icon/logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome Extensioin + Popup + JS + Vite App - Popup</title>
+
+    <script type="module" src="/build/app.esm.js"></script>
+    <script nomodule src="/build/app.js"></script>
+    <link href="/build/app.css" rel="stylesheet" />
+
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <comp-popup crx="create-chrome-ext"></comp-popup>
+    <script type="module" src="/src/popup/index.jsx"></script>
+  </body>
+</html>
