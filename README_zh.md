@@ -8,41 +8,38 @@
 ![GitHub Language Count](https://img.shields.io/github/languages/count/guocaoyi/create-chrome-ext)
 [![npm publish](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/guocaoyi/create-chrome-ext/actions/workflows/npm-publish.yml)
 
-> Scaffolding your chrome extension, multiple boilerplates supported!
+> Chrome 插件生成器，支持多种框架模板！
 
-- 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
-- 🥡 Out of Box
-- 🌈 Multiple Frontend Framework Supported (9+)
-- 🥢 Multiple Language Supported (TypeScript & JavaScript)
-- 🧶 Optimized Builds
-- 🌗 Light & Dark Mode
+- 🚀 迅速的热更能力(采用 [Vite2](https://vitejs.dev))
+- 🥡 开箱即用
+- 🌈 多种前端框架支撑 (9+)
+- 🥢 支撑 TypeScript 以及 JavaScript
+- 🌗 明亮以及暗黑模式
 
-[EN](./README.md) · [中文](./README_zh.md)
-
-## Installing
+## 安装
 
 > Node >= 14.18.0
 
 ```bash
-# use npm-create command, or use pnpm | yarn
+# 使用 npm create 命令
 λ npm create chrome-ext
 
-# or use npx command
+# 或者使用 npx 命令
 λ npx create-chrome-ext
 
-# or use npm-init command
+# 或者使用 npm init 命令
 λ npm init chrome-ext
 ```
 
-## Usage
+## 用例
 
-You can also directly specify the project name and the template you want to use via additional command line options. For example, to scaffold a Vite + Svelte project, run:
+您还可以通过其他命令行配置直接指定项目名称和要使用的模板。比如 Vite + Svelte 项目，运行：
 
 ```bash
 # npm 6.x
 λ npm create chrome-ext@latest my-crx-app --template svelte-js
 
-# or npm 7+, extra double-dash is needed:
+# npm 版本 7 以上， 注意 -- 命令选项
 λ npm create chrome-ext@latest my-crx-app -- --template react-ts
 
 # or yarn
@@ -65,17 +62,17 @@ You can also generator the project with `crx` cli, run:
 λ create-chrome-ext my-crx-app
 ```
 
-## Supported Templates
+## 模板
 
-framework presets include:
+预置的前端架构：
 
 [React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com)
 
-languages supported:
+语言支持：
 
 [JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/)
 
-## Preview
+## 预览
 
 ![crx-run](./docs/crx-run.png)
 ![crx-install](./docs/crx-install.png)

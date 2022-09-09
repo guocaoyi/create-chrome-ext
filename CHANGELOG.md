@@ -9,13 +9,17 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.8.0 [2022.09.05]
+
+- remove: qwik framework boilerplate
+- feat: stencil framework boilerplate
+
 ## 0.7.0 [2022.08.26]
 
 - ci: update github action, add npm-build
 
 ## 0.6.0 [2022.07.16]
 
-- feat: add qwik framework boilerplate
 - fix: fix lit framework boilerplate, start error
 - update: docs preview code image
 
