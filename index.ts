@@ -322,7 +322,9 @@ async function init() {
     now: new Date().format('yyyy.MM.dd'),
     //@ts-ignore
     nowYear: new Date().format('yyyy'),
-    framework: (framework.name || '').replace(/\S/, (str: string) => str.toUpperCase()),
+    framework: (framework?.name ?? template ?? '').replace(/\S/, (str: string) =>
+      str.toUpperCase(),
+    ),
   }
 
   const write = (file: string, content?: string | NodeJS.ArrayBufferView) => {
