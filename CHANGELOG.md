@@ -9,6 +9,11 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.8.2 [2023.03.09]
+
+- fix: template vanilla-js initial error(remove `@vitejs/plugin-react` dependency)
+- fix: `yarn create` error with `--template` options
+
 ## 0.8.1 [2022.09.09]
 
 - docs: add zn_CN readme
