@@ -1,8 +1,120 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.7.1",
-  "lockfileVersion": 1,
+  "version": "0.8.3",
+  "lockfileVersion": 2,
   "requires": true,
+  "packages": {
+    "": {
+      "name": "create-chrome-ext",
+      "version": "0.8.3",
+      "license": "MIT",
+      "dependencies": {
+        "kolorist": "^1.5.1",
+        "minimist": "^1.2.6",
+        "mustache": "^4.2.0",
+        "prompts": "^2.4.2"
+      },
+      "bin": {
+        "create-chrome-ext": "index.js",
+        "crx": "index.js"
+      },
+      "engines": {
+        "node": ">=14.18.0"
+      },
+      "optionalDependencies": {
+        "@types/minimist": "^1.2.2",
+        "@types/mustache": "^4.2.1",
+        "@types/node": "^14.18.18",
+        "@types/prompts": "^2.4.0",
+        "prettier": "^2.7.1",
+        "prettier-plugin-svelte": "^2.7.0",
+        "svelte": "^3.44.0",
+        "typescript": "^4.8.0"
+      }
+    },
+    "node_modules/@types/minimist": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@types/minimist/-/minimist-1.2.2.tgz",
+      "integrity": "sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==",
+      "optional": true
+    },
+    "node_modules/@types/mustache": {
+      "version": "4.2.1",
+      "resolved": "https://registry.npmjs.org/@types/mustache/-/mustache-4.2.1.tgz",
+      "integrity": "sha512-gFAlWL9Ik21nJioqjlGCnNYbf9zHi0sVbaZ/1hQEBcCEuxfLJDvz4bVJSV6v6CUaoLOz0XEIoP7mSrhJ6o237w==",
+      "optional": true
+    },
+    "node_modules/@types/node": {
+      "version": "14.18.25",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-14.18.25.tgz",
+      "integrity": "sha512-9pLfceRSrKIsv/MISN6RoFWTIzka36Uk2Uuf5a8cHyDYhEgl5Hm5dXoe621KULeBjt+cFsY18mILsWWtJeG80w==",
+      "optional": true
+    },
+    "node_modules/@types/prompts": {
+      "version": "2.4.0",
+      "resolved": "https://registry.npmjs.org/@types/prompts/-/prompts-2.4.0.tgz",
+      "integrity": "sha512-7th8Opn+0XlN0O6qzO7dXOPwL6rigq/EwRS2DntaTHwSw8cLaYKeAPt5dWEKHSL+ffVSUl1itTPUC06+FlsV4Q==",
+      "optional": true
+    },
+    "node_modules/kleur": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz",
+      "integrity": "sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w=="
+    },
+    "node_modules/kolorist": {
+      "version": "1.5.1",
+      "resolved": "https://registry.npmjs.org/kolorist/-/kolorist-1.5.1.tgz",
+      "integrity": "sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ=="
+    },
+    "node_modules/minimist": {
+      "version": "1.2.6",
+      "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz",
+      "integrity": "sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q=="
+    },
+    "node_modules/mustache": {
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/mustache/-/mustache-4.2.0.tgz",
+      "integrity": "sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ=="
+    },
+    "node_modules/prettier": {
+      "version": "2.7.1",
+      "resolved": "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz",
+      "integrity": "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==",
+      "optional": true
+    },
+    "node_modules/prettier-plugin-svelte": {
+      "version": "2.7.0",
+      "resolved": "https://registry.npmjs.org/prettier-plugin-svelte/-/prettier-plugin-svelte-2.7.0.tgz",
+      "integrity": "sha512-fQhhZICprZot2IqEyoiUYLTRdumULGRvw0o4dzl5jt0jfzVWdGqeYW27QTWAeXhoupEZJULmNoH3ueJwUWFLIA==",
+      "optional": true
+    },
+    "node_modules/prompts": {
+      "version": "2.4.2",
+      "resolved": "https://registry.npmjs.org/prompts/-/prompts-2.4.2.tgz",
+      "integrity": "sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==",
+      "dependencies": {
+        "kleur": "^3.0.3",
+        "sisteransi": "^1.0.5"
+      }
+    },
+    "node_modules/sisteransi": {
+      "version": "1.0.5",
+      "resolved": "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz",
+      "integrity": "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="
+    },
+    "node_modules/svelte": {
+      "version": "3.49.0",
+      "resolved": "https://registry.npmjs.org/svelte/-/svelte-3.49.0.tgz",
+      "integrity": "sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==",
+      "optional": true
+    },
+    "node_modules/typescript": {
+      "version": "4.8.2",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.2.tgz",
+      "integrity": "sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==",
+      "optional": true
+    }
+  },
   "dependencies": {
     "@types/minimist": {
       "version": "1.2.2",
