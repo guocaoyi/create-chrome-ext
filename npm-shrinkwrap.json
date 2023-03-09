@@ -19,7 +19,7 @@
         "crx": "index.js"
       },
       "engines": {
-        "node": ">=14.18.0"
+        "node": ">=16.x"
       },
       "optionalDependencies": {
         "@types/minimist": "^1.2.2",
@@ -29,7 +29,7 @@
         "prettier": "^2.7.1",
         "prettier-plugin-svelte": "^2.7.0",
         "svelte": "^3.44.0",
-        "typescript": "^4.8.0"
+        "typescript": "^4.9.5"
       }
     },
     "node_modules/@types/minimist": {
@@ -109,10 +109,17 @@
       "optional": true
     },
     "node_modules/typescript": {
-      "version": "4.8.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.2.tgz",
-      "integrity": "sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==",
-      "optional": true
+      "version": "4.9.5",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz",
+      "integrity": "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==",
+      "optional": true,
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=4.2.0"
+      }
     }
   },
   "dependencies": {
@@ -193,9 +200,9 @@
       "optional": true
     },
     "typescript": {
-      "version": "4.8.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.2.tgz",
-      "integrity": "sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==",
+      "version": "4.9.5",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz",
+      "integrity": "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==",
       "optional": true
     }
   }
