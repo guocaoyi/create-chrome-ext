@@ -24,3 +24,4 @@ types
 !.gitignore
 !.editorconfig
 !.vscode
+!template-*/src/*.js
