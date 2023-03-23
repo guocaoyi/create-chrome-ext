@@ -19,5 +19,5 @@ export default defineConfig({
       },
     },
   },
-  plugin: [crx({ manifest })],
+  plugins: [crx({ manifest })],
 })
