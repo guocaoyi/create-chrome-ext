@@ -9,6 +9,10 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.8.4 [2023.03.23]
+
+- merge: merge pull requests
+
 ## 0.8.3 [2023.03.09]
 
 - fix: template vanilla-js initial error(remove `@vitejs/plugin-react` dependency)
