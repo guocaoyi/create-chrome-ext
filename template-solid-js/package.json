@@ -25,6 +25,7 @@
     "@crxjs/vite-plugin": "^1.0.12",
     "prettier": "^2.7.1",
     "vite": "^2.9.13",
+    "vite-plugin-zip-pack": "^1.0.5",
     "vite-plugin-solid": "^2.2.6"
   },
   "dependencies": {

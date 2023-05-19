@@ -31,6 +31,7 @@
     "svelte-preprocess": "^4.9.8",
     "tslib": "^2.3.1",
     "typescript": "^4.5.4",
-    "vite": "^2.9.13"
+    "vite": "^2.9.13",
+    "vite-plugin-zip-pack": "^1.0.5"
   }
 }
