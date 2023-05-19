@@ -24,8 +24,9 @@
     "alpinejs": "^3.10.2"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.193",
     "@crxjs/vite-plugin": "^1.0.12",
-    "vite": "^2.9.13"
+    "@types/chrome": "0.0.193",
+    "vite": "^2.9.13",
+    "vite-plugin-zip-pack": "^1.0.5"
   }
 }

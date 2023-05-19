@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import { crx } from '@crxjs/vite-plugin'
 import solidPlugin from 'vite-plugin-solid'
-
+import zipPack from 'vite-plugin-zip-pack';
 import manifest from './src/manifest.js'
 
 export default defineConfig(({ mode }) => {
@@ -17,6 +17,11 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    plugins: [crx({ manifest }), solidPlugin()],
+    plugins: [crx({ manifest }), solidPlugin(),zipPack({
+        outDir: `package`,
+        inDir: 'build',
+        // @ts-ignore
+        outFileName: `${manifest.short_name ?? manifest.name.replaceAll(" ", "-")}-extension-v${manifest.version}.zip`,
+      }),],
   }
 })

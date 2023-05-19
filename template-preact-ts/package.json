@@ -28,6 +28,7 @@
     "@preact/preset-vite": "^2.3.0",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
-    "vite": "^2.9.13"
+    "vite": "^2.9.13",
+    "vite-plugin-zip-pack": "^1.0.5"
   }
 }
