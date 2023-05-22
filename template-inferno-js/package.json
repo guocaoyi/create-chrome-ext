@@ -28,7 +28,6 @@
     "@babel/parser": "7.x",
     "@crxjs/vite-plugin": "^1.0.12",
     "vite": "^2.9.13",
-    "vite-plugin-inferno": "0.0.0",
-    "vite-plugin-zip-pack": "^1.0.5"
+    "vite-plugin-inferno": "0.0.0"
   }
 }
