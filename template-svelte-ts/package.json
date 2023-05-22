@@ -23,7 +23,7 @@
   "dependencies": {},
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.12",
-    "@types/chrome": "^0.0.193",
+    "@types/chrome": "^0.0.236",
     "@sveltejs/vite-plugin-svelte": "1.0.0-next.49",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
