@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-react-ts",
+  "displayName": "React.ts Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",

@@ -1,9 +1,10 @@
 import { defineManifest } from '@crxjs/vite-plugin'
+import packageData from '../package.json';
 
 export default defineManifest({
-  name: 'create-chrome-ext',
-  description: '',
-  version: '0.0.0',
+  name: packageData.displayName,
+  description: packageData.description,
+  version: packageData.version,
   manifest_version: 3,
   icons: {
     '16': 'img/logo-16.png',

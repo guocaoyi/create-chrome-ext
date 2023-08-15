@@ -355,6 +355,9 @@ async function init() {
   const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8'))
 
   pkg.name = packageName || getProjectName()
+  if (pkg.displayName) {
+    pkg.displayName = getProjectName() || packageName
+  }
   pkg.author = author || '*'
 
   write('package.json', JSON.stringify(pkg, null, 2))
