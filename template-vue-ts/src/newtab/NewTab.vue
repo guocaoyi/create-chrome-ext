@@ -6,7 +6,7 @@ const crx = ref('create-chrome-ext')
 
 <template>
   <main>
-    <h3>Options Page!</h3>
+    <h3>Devtools Panel Page!</h3>
 
     <h6>v 0.0.0</h6>
 
