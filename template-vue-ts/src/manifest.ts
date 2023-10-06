@@ -1,9 +1,10 @@
 import { defineManifest } from '@crxjs/vite-plugin'
+import packageData from '../package.json'
 
 export default defineManifest({
-  name: 'create-chrome-ext',
-  description: '',
-  version: '0.0.0',
+  name: packageData.name,
+  description: packageData.description,
+  version: packageData.version,
   manifest_version: 3,
   icons: {
     16: 'img/logo-16.png',
@@ -27,11 +28,14 @@ export default defineManifest({
       js: ['src/content/index.ts'],
     },
   ],
+  side_panel: {
+    default_path: 'sidepanel.html',
+  },
   web_accessible_resources: [
     {
       resources: ['img/logo-16.png', 'img/logo-34.png', 'img/logo-48.png', 'img/logo-128.png'],
       matches: [],
     },
   ],
-  permissions: [],
+  permissions: ['sidePanel'],
 })

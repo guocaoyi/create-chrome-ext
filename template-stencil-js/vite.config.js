@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import { crx } from '@crxjs/vite-plugin'
 import vitePluginStencil from 'vite-plugin-stencil'
-import zipPack from 'vite-plugin-zip-pack';
+import zipPack from 'vite-plugin-zip-pack'
 import manifest from './src/manifest'
 
 export default defineConfig(({ mode }) => {
@@ -51,12 +51,14 @@ export default defineConfig(({ mode }) => {
             },
           ],
         },
-      })
-      ,zipPack({
+      }),
+      zipPack({
         outDir: `package`,
         inDir: 'build',
         // @ts-ignore
-        outFileName: `${manifest.short_name ?? manifest.name.replaceAll(" ", "-")}-extension-v${manifest.version}.zip`,
+        outFileName: `${manifest.short_name ?? manifest.name.replaceAll(' ', '-')}-extension-v${
+          manifest.version
+        }.zip`,
       }),
     ],
   }
