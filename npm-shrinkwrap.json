@@ -1,12 +1,12 @@
 {
   "name": "create-chrome-ext",
-  "version": "0.8.4",
+  "version": "0.8.7",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "create-chrome-ext",
-      "version": "0.8.4",
+      "version": "0.8.7",
       "license": "MIT",
       "dependencies": {
         "kolorist": "^1.5.1",
@@ -19,7 +19,7 @@
         "crx": "index.js"
       },
       "engines": {
-        "node": ">=16.x"
+        "node": ">=14.18.0"
       },
       "optionalDependencies": {
         "@types/minimist": "^1.2.2",

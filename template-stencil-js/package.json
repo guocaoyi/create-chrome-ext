@@ -27,7 +27,7 @@
     "fmt": "prettier --write '**/*.{jsx,js,json,css,md}'"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^1.0.12",
+    "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@stencil/core": "2.13.0",
     "express": "4.17.2",
     "prettier": "^2.7.1",
