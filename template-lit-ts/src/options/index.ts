@@ -4,7 +4,7 @@ import { customElement, property } from 'lit/decorators.js'
 /**
  * options
  */
-@customElement('options')
+@customElement('options-panel')
 export class Options extends LitElement {
   @property()
   crx = 'create-chrome-ext'
@@ -73,6 +73,6 @@ export class Options extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    options: Options
+    'options-panel': Options
   }
 }

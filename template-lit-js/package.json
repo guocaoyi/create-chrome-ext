@@ -21,11 +21,11 @@
     "fmt": "prettier --write '**/*.{js,json,css,scss,md}'"
   },
   "dependencies": {
-    "lit": "^2.2.6"
+    "lit": "^2.8.0"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
-    "prettier": "^2.7.1",
-    "vite": "^2.9.13"
+    "prettier": "^3.0.3",
+    "vite": "^3.2.7"
   }
 }

@@ -1,9 +1,9 @@
 import { html, css, LitElement } from 'lit'
 
 /**
- * options
+ * Side Panel
  */
-export class Options extends LitElement {
+export class Sidepanel extends LitElement {
   static get properties() {
     return {
       crx: { type: String },
@@ -18,7 +18,7 @@ export class Options extends LitElement {
   render() {
     return html`
       <main>
-        <h3>Options Page!</h3>
+        <h3>Side Panel Page!</h3>
 
         <h6>v 0.0.0</h6>
 
@@ -77,4 +77,4 @@ export class Options extends LitElement {
   }
 }
 
-window.customElements.define('options-panel', Options)
+window.customElements.define('side-panel', Sidepanel)

@@ -11,11 +11,11 @@ Summary
 
 ## 0.8.8 [2023.10.08]
 
-- feat: support side panel for chrome extension(vanilla \ preact \ svelte \ solid \ inferno)
+- feat: support side panel for chrome extension(vanilla \ preact \ svelte \ solid \ inferno \ lit)
 
 ## 0.8.7 [2023.10.03]
 
-- feat: support side panel for chrome extension(react & vue)
+- feat: support side panel for chrome extension(react \ vue)
 - merge: merge pull requests
 
 ## 0.8.4 [2023.03.23]

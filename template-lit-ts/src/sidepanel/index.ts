@@ -2,21 +2,19 @@ import { html, css, LitElement } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
 /**
- * popup
+ * sidepanel
  */
-@customElement('popup-panel')
-export class Popup extends LitElement {
+@customElement('side-panel')
+export class Sidepanel extends LitElement {
   @property()
   crx = 'create-chrome-ext'
 
   render() {
     return html`
       <main>
-        <h3>Popup Page!</h3>
+        <h3>Side Panel Page!</h3>
 
         <h6>v 0.0.0</h6>
-
-        <slot></slot>
 
         <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank"
           >Generator by ${this.crx}</a
@@ -52,7 +50,7 @@ export class Popup extends LitElement {
 
     h6 {
       font-size: 0.5rem;
-      color: #333333;
+      color: #cccccc;
       margin: 0.5rem;
     }
 
@@ -73,6 +71,6 @@ export class Popup extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'popup-panel': Popup
+    'side-panel': Sidepanel
   }
 }
