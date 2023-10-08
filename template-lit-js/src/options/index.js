@@ -22,8 +22,6 @@ export class Options extends LitElement {
 
         <h6>v 0.0.0</h6>
 
-        <slot></slot>
-
         <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank"
           >Generator by ${this.crx}</a
         >
@@ -59,7 +57,7 @@ export class Options extends LitElement {
 
       h6 {
         font-size: 0.5rem;
-        color: #333333;
+        color: #cccccc;
         margin: 0.5rem;
       }
 
@@ -79,4 +77,4 @@ export class Options extends LitElement {
   }
 }
 
-window.customElements.define('options', Options)
+window.customElements.define('options-panel', Options)

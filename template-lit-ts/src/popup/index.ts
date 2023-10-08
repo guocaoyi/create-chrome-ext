@@ -4,7 +4,7 @@ import { customElement, property } from 'lit/decorators.js'
 /**
  * popup
  */
-@customElement('popup')
+@customElement('popup-panel')
 export class Popup extends LitElement {
   @property()
   crx = 'create-chrome-ext'
@@ -73,6 +73,6 @@ export class Popup extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    popup: Popup
+    'popup-panel': Popup
   }
 }

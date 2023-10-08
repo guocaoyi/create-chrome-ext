@@ -26,3 +26,6 @@ types
 !.editorconfig
 !.vscode
 !template-*/src/*.js
+
+# build
+template-*/package

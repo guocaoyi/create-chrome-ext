@@ -5,25 +5,15 @@
     <link rel="icon" href="/icons/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chrome Extension + Alpine + JS + Vite App - Options</title>
-    <link rel="stylesheet" href="/common.css" />
   </head>
   <body>
-    <main>
+    <main x-data>
       <h3>Options Page!</h3>
 
       <h6>v 0.0.0</h6>
 
-      <a
-        href="https://www.npmjs.com/package/create-chrome-ext"
-        target="_blank"
-        x-data="{ crx: '' }"
-        x-text="crx"
-        x-init="() => {
-          crx = 'Power by create-chrome-ext';
-        }"
-      >
-      </a>
+      <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank"></a>
     </main>
-    <script type="module" src="/src/options/index.js"></script>
+    <!-- <script type="module" src="/src/main.ts"></script> -->
   </body>
 </html>

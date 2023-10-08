@@ -9,6 +9,15 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.8.8 [2023.10.08]
+
+- feat: support side panel for chrome extension(alpine \ vanilla \ preact \ svelte \ solid \ inferno \ lit)
+
+## 0.8.7 [2023.10.03]
+
+- feat: support side panel for chrome extension(react \ vue)
+- merge: merge pull requests
+
 ## 0.8.4 [2023.03.23]
 
 - merge: merge pull requests
