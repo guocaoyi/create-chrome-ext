@@ -26,9 +26,9 @@
     "@types/chrome": "^0.0.236",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
-    "vite": "^2.9.9",
-    "vite-plugin-solid": "^2.2.6",
-    "vite-plugin-zip-pack": "^1.0.5"
+    "vite": "^3.2.7",
+    "vite-plugin-solid": "^2.7.0",
+    "vite-plugin-zip-pack": "^1.0.6"
   },
   "dependencies": {
     "solid-js": "^1.4.2"
