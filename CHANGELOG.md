@@ -11,7 +11,7 @@ Summary
 
 ## 0.8.8 [2023.10.08]
 
-- feat: support side panel for chrome extension(vanilla \ preact \ solid \ stencil \ svelte \ lit \ inferno)
+- feat: support side panel for chrome extension(vanilla \ preact \ svelte)
 
 ## 0.8.7 [2023.10.03]
 

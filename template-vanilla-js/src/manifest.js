@@ -35,7 +35,5 @@ export default defineManifest({
       matches: [],
     },
   ],
-  permissions: [
-    "sidePanel",
-  ],
+  permissions: ['sidePanel'],
 })
