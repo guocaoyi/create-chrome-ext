@@ -1,13 +1,13 @@
-import { Component, Prop, h } from '@stencil/core'
+import { Component, h } from '@stencil/core'
 
 @Component({
-  tag: 'app-options',
-  styleUrl: 'app-options.css',
+  tag: 'options-root',
+  styleUrl: 'options-root.css',
+  shadow: true,
 })
-export class AppOptions {
-  @Prop() crx: string = ''
-
+export class OptionsRoot {
   render() {
+    let crx = 'create-chrome-ext'
     return (
       <main>
         <h3>Options Page!</h3>
@@ -15,11 +15,9 @@ export class AppOptions {
         <h6>v 0.0.0</h6>
 
         <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank">
-          Power by {this.crx}
+          Power by {crx}
         </a>
       </main>
     )
   }
 }
-
-export default AppOptions
