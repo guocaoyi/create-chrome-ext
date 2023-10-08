@@ -11,7 +11,7 @@ Summary
 
 ## 0.8.8 [2023.10.08]
 
-- feat: support side panel for chrome extension(vanilla \ preact \ svelte \ solid \ inferno \ lit)
+- feat: support side panel for chrome extension(alpine \ vanilla \ preact \ svelte \ solid \ inferno \ lit)
 
 ## 0.8.7 [2023.10.03]
 

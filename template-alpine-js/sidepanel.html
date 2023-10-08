@@ -4,26 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/icons/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chrome Extension + Alpine + JS + Vite 2.0 - SidePanel</title>
-    <link rel="stylesheet" href="/common.css" />
+    <title>Chrome Extension + Alpine + JS + Vite App - Side Panel</title>
   </head>
   <body>
-    <main>
+    <main x-data>
       <h3>Side Panel Page!</h3>
 
       <h6>v 0.0.0</h6>
 
-      <a
-        href="https://www.npmjs.com/package/create-chrome-ext"
-        target="_blank"
-        x-data="{ crx: '' }"
-        x-text="crx"
-        x-init="() => {
-          crx = 'Power by create-chrome-ext';
-        }"
-      >
+      <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank">
+        Power by <span x-text="$store.shop.crx"></span>
       </a>
     </main>
-    <script type="module" src="/src/sidepanel/index.ts"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

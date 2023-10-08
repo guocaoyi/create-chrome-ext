@@ -21,10 +21,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "alpinejs": "^3.10.2"
+    "alpinejs": "^3.13.1"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
-    "vite": "^2.9.13"
+    "vite": "^4.4.11"
   }
 }
