@@ -26,11 +26,16 @@ export default defineManifest({
       js: ['src/content/index.js'],
     },
   ],
+  side_panel: {
+    default_path: 'sidepanel.html',
+  },
   web_accessible_resources: [
     {
       resources: ['img/logo-16.png', 'img/logo-34.png', 'img/logo-48.png', 'img/logo-128.png'],
       matches: [],
     },
   ],
-  permissions: [],
+  permissions: [
+    "sidePanel",
+  ],
 })
