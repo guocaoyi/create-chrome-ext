@@ -23,15 +23,14 @@
   "dependencies": {},
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
-    "@types/chrome": "^0.0.236",
-    "@sveltejs/vite-plugin-svelte": "1.0.0-next.49",
-    "prettier": "^2.7.1",
-    "prettier-plugin-svelte": "^2.7.0",
-    "svelte": "^3.44.0",
-    "svelte-preprocess": "^4.9.8",
-    "tslib": "^2.3.1",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.13",
-    "vite-plugin-zip-pack": "^1.0.5"
+    "@types/chrome": "^0.0.246",
+    "@sveltejs/vite-plugin-svelte": "2.4.6",
+    "prettier": "^3.0.3",
+    "prettier-plugin-svelte": "^3.0.3",
+    "svelte": "^4.2.1",
+    "svelte-preprocess": "^5.0.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11"
   }
 }

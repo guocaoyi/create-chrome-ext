@@ -21,16 +21,15 @@
     "fmt": "prettier --write '**/*.{vue,ts,json,css,scss,md}'"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
-    "@types/chrome": "^0.0.236",
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@types/chrome": "^0.0.246",
+    "@vitejs/plugin-vue": "^4.4.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4",
-    "vite": "^2.9.13",
-    "vite-plugin-zip-pack": "^1.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^3.2.7",
     "vue-tsc": "^0.38.2"
   }
 }

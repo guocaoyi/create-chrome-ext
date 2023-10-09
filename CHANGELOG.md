@@ -9,6 +9,10 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## 0.8.9 [2023.10.09]
+
+- feat: support side panel for chrome extension(stencil)
+
 ## 0.8.8 [2023.10.08]
 
 - feat: support side panel for chrome extension(alpine \ vanilla \ preact \ svelte \ solid \ inferno \ lit)

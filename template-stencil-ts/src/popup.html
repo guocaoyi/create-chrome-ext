@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html dir="ltr" lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/icon/logo.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chrome Extension + Popup + TS + Vite App - Popup</title>
+    <meta charset="utf-8" />
+    <title>Stencil Starter App</title>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
 
-    <script type="module" src="/build/app.esm.js"></script>
-    <script nomodule src="/build/app.js"></script>
-    <link href="/build/app.css" rel="stylesheet" />
-
-    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/assets/app.esm.js"></script>
+    <script nomodule src="/assets/app.js"></script>
   </head>
   <body>
-    <comp-popup crx="create-chrome-ext"></comp-popup>
-    <script type="module" src="/src/popup/index.tsx"></script>
+    <popup-root></popup-root>
   </body>
 </html>

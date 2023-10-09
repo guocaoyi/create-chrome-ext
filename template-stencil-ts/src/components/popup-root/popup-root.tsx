@@ -1,13 +1,13 @@
-import { Component, Prop, h } from '@stencil/core'
+import { Component, h } from '@stencil/core'
 
 @Component({
-  tag: 'app-popup',
-  styleUrl: 'app-popup.css',
+  tag: 'popup-root',
+  styleUrl: 'popup-root.css',
+  shadow: true,
 })
-export class AppPopup {
-  @Prop() crx: string = ''
-
+export class PopupRoot {
   render() {
+    let crx = 'create-chrome-ext'
     return (
       <main>
         <h3>Popup Page!</h3>
@@ -15,11 +15,9 @@ export class AppPopup {
         <h6>v 0.0.0</h6>
 
         <a href="https://www.npmjs.com/package/create-chrome-ext" target="_blank">
-          Power by {this.crx}
+          Power by {crx}
         </a>
       </main>
     )
   }
 }
-
-export default AppPopup

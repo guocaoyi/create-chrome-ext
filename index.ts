@@ -128,12 +128,19 @@ const Boilerplates = [
       },
     ],
   },
-  // {
-  //   name: 'stencil', // star:11 wd:419
-  //   kolor: ansi256(69),
-  // },
   {
-    name: 'inferno', // star:15.5 wd:88
+    name: 'stencil', // star:11.9 wd:655
+    kolor: ansi256(69),
+    variants: [
+      {
+        name: 'stencil-ts',
+        display: 'TypeScript',
+        kolor: ansi256(25),
+      },
+    ],
+  },
+  {
+    name: 'inferno', // star:15.9 wd:88
     kolor: ansi256(202),
     variants: [
       {

@@ -1,13 +1,3 @@
-/*
-  Global App CSS
-  ----------------------
-  Use this file for styles that should be applied to all components.
-  For example, "font-family" within the "body" selector is a CSS property
-  most apps will want applied to all components.
-
-  Any global CSS variables should also be applied here.
-*/
-
 :root {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
@@ -38,8 +28,38 @@
 
 body {
   min-width: 20rem;
-  margin: 0px;
-  padding: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+main {
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #5530ff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.2rem;
+  margin: 2rem auto;
+}
+
+h6 {
+  font-size: 0.5rem;
+  color: #cccccc;
+  margin: 0.5rem;
+}
+
+a {
+  font-size: 0.5rem;
+  margin: 0.5rem;
+  color: #cccccc;
+  text-decoration: none;
+}
+
+@media (min-width: 480px) {
+  h3 {
+    max-width: none;
+  }
 }
