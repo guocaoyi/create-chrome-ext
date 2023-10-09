@@ -25,7 +25,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Install
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: NPM CI
         run: npm ci
