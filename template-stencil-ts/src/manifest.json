@@ -12,8 +12,6 @@
   "manifest_version": 3,
   "action": { "default_popup": "popup.html", "default_icon": "assets/img/logo-48.png" },
   "options_page": "options.html",
-  "background": { "service_worker": "build/background.js", "type": "module" },
-  "content_scripts": [{ "matches": ["http://*/*", "https://*/*"], "js": ["build/content.js"] }],
   "side_panel": { "default_path": "sidepanel.html" },
   "web_accessible_resources": [
     {

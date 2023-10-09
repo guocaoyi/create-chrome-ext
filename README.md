@@ -12,7 +12,7 @@
 
 - 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
 - 🥡 Out of Box
-- 🌈 Multiple Frontend Framework Supported (9+)
+- 🌈 Multiple Frontend Framework Supported (10+)
 - 🥢 Multiple Language Supported (TypeScript & JavaScript)
 - 🧶 Optimized Builds
 - 🌗 Light & Dark Mode

@@ -1,14 +1,4 @@
-import { Config } from '@stencil/core'
-import type Rollup from 'rollup'
-
-const rollupcrx = (hook: string = 'buildStart') => {
-  return {
-    name: 'copy-file',
-    [hook]: async (options: Rollup.InputOptions) => {
-      console.log('copy-file', options)
-    },
-  }
-}
+import type { Config } from '@stencil/core'
 
 // https://stenciljs.com/docs/config
 export const config: Config = {
@@ -17,12 +7,13 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'www',
+      buildDir: 'assets',
+      dir: 'build',
       serviceWorker: null,
       copy: [{ src: 'options.html' }, { src: 'popup.html' }, { src: 'sidepanel.html' }],
     },
   ],
-  rollupPlugins: {
-    before: [rollupcrx()],
-    after: [rollupcrx()],
-  },
+  // rollupPlugins: {
+  //   before: [rollupcrx()],
+  // },
 }

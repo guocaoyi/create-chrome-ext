@@ -17,7 +17,8 @@
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "fmt": "prettier --write '**/*.{jsx,js,json,css,md}'"
   },
   "devDependencies": {
     "@stencil/core": "^4.4.0",
@@ -25,7 +26,6 @@
     "@types/node": "^20.8.3",
     "express": "^4.18.2",
     "prettier": "^3.0.3",
-    "rollup": "^4.0.2",
     "typescript": "^5.2.2"
   }
 }

@@ -27,7 +27,7 @@
     "@babel/core": "7.x",
     "@babel/parser": "7.x",
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
-    "@types/chrome": "^0.0.236",
+    "@types/chrome": "^0.0.246",
     "typescript": "^5.2.2",
     "vite": "^3.2.7",
     "vite-plugin-inferno": "0.0.1"
