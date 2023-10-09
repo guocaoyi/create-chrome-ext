@@ -7,5 +7,5 @@
   "semi": false,
   "tabWidth": 2,
   "useTabs": false,
-  "plugins": ["./node_modules/prettier-plugin-svelte"]
+  "plugins": ["prettier-plugin-svelte"]
 }

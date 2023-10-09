@@ -31,7 +31,6 @@
     "@stencil/core": "2.13.0",
     "express": "4.17.2",
     "prettier": "^2.7.1",
-    "vite": "^2.9.13",
-    "vite-plugin-zip-pack": "^1.0.5"
+    "vite": "^3.2.7"
   }
 }

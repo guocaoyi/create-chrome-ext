@@ -12,12 +12,17 @@
   "manifest_version": 3,
   "action": { "default_popup": "popup.html", "default_icon": "assets/img/logo-48.png" },
   "options_page": "options.html",
-  "background": { "service_worker": "src/background/background.ts", "type": "module" },
-  "content_scripts": [{ "matches": ["http://*/*", "https://*/*"], "js": ["src/content/index.ts"] }],
+  "background": { "service_worker": "build/background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["http://*/*", "https://*/*"], "js": ["build/content.js"] }],
   "side_panel": { "default_path": "sidepanel.html" },
   "web_accessible_resources": [
     {
-      "resources": ["assets/img/logo-16.png", "assets/img/logo-34.png", "assets/img/logo-48.png", "assets/img/logo-128.png"],
+      "resources": [
+        "assets/img/logo-16.png",
+        "assets/img/logo-34.png",
+        "assets/img/logo-48.png",
+        "assets/img/logo-128.png"
+      ],
       "matches": []
     }
   ],

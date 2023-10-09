@@ -5,7 +5,7 @@ import { Component, Prop, h } from '@stencil/core'
   styleUrl: 'app-options.css',
 })
 export class AppOptions {
-  @Prop() crx: string = ''
+  @Prop() crx = ''
 
   render() {
     return (
