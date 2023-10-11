@@ -10,12 +10,11 @@
 
 > Scaffolding your chrome extension, multiple boilerplates supported!
 
-- 🚀 Lightning Fast HMR(use [Vite2](https://vitejs.dev))
+- 🚀 Lightning Fast HMR(use [Vite3](https://vitejs.dev))
 - 🥡 Out of Box
 - 🌈 Multiple Frontend Framework Supported (10+)
 - 🥢 Multiple Language Supported (TypeScript & JavaScript)
 - 🧶 Optimized Builds
-- 🌗 Light & Dark Mode
 
 [EN](./README.md) · [中文](./README_zh.md)
 

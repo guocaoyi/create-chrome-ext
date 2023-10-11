@@ -9,6 +9,12 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
+## Next [xxxx.xx.xx]
+
+- feat: vite version update to 3.x
+- fix: vue framework vite @3 error (issue #51)
+- doc: update README.md
+
 ## 0.8.9 [2023.10.09]
 
 - feat: support side panel for chrome extension(stencil)

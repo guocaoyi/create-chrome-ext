@@ -10,11 +10,10 @@
 
 > Chrome 插件生成器，支持多种框架模板！
 
-- 🚀 敏捷的热更能力(采用 [Vite2](https://vitejs.dev))
+- 🚀 敏捷的热更能力(采用 [Vite3](https://vitejs.dev))
 - 🥡 开箱即用
 - 🌈 多种前端框架支撑 (10+)
 - 🥢 支撑 TypeScript 以及 JavaScript
-- 🌗 明亮以及暗黑模式
 
 [EN](./README.md) · [中文](./README_zh.md)
 
