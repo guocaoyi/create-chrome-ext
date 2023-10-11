@@ -1,7 +1,6 @@
 # Create Chrome Extension (.crx)
 
 ![crx-preview](./docs/crx-preview.png)
-
 [![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
@@ -10,10 +9,10 @@
 
 > Chrome 插件生成器，支持多种框架模板！
 
-- 🚀 敏捷的热更能力(采用 [Vite3](https://vitejs.dev))
+- 🚀 敏捷的热更能力(采用 [Vite4](https://vitejs.dev))
 - 🥡 开箱即用
-- 🌈 多种前端框架支撑 (10+)
-- 🥢 支撑 TypeScript 以及 JavaScript
+- 🌈 多种前端框架支持（[React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com)）
+- 🥢 多语言支持（[JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/)）
 
 [EN](./README.md) · [中文](./README_zh.md)
 
@@ -62,16 +61,6 @@ You can also generator the project with `crx` cli, run:
 # or use create-chrome-exe (global env)
 λ create-chrome-ext my-crx-app
 ```
-
-## 模板
-
-预置的前端架构：
-
-[React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com)
-
-语言支持：
-
-[JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/)
 
 ## 预览
 

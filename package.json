@@ -31,13 +31,8 @@
   "keywords": [
     "chrome-extension",
     "crx",
-    "crx-packages",
     "chrome-extension-starter",
     "chrome-extension-boilerplate",
-    "create-chrome-extension",
-    "create-crx",
-    "vite-starter",
-    "vite-template",
     "react",
     "vue",
     "svelte",
@@ -47,6 +42,7 @@
     "inferno",
     "lit",
     "stencil",
+    "qwik",
     "vanilla"
   ],
   "bugs": {
@@ -62,8 +58,8 @@
   "optionalDependencies": {
     "@types/minimist": "^1.2.3",
     "@types/mustache": "^4.2.3",
-    "@types/node": "^20.8.3",
-    "@types/prompts": "^2.4.5",
+    "@types/node": "^20.8.4",
+    "@types/prompts": "^2.4.6",
     "prettier": "^3.0.3",
     "prettier-plugin-svelte": "^3.0.3",
     "svelte": "^4.2.1",
