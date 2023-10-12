@@ -17,10 +17,10 @@ export const config: Config = {
   rollupConfig: {
     inputOptions: {
       moduleContext: {
-        'content':'./src/global/content',
-        'background':'./src/global/background',
+        content: './src/global/content',
+        background: './src/global/background',
       },
-      treeshake: true
+      treeshake: true,
     },
   },
 }
