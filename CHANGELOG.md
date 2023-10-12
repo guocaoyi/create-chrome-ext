@@ -15,6 +15,7 @@ Summary
 - feat: depen version update, <vite@4.x>
 - feat: support devtool panel
 - doc: update README.md
+- doc: i18n, supprt French \ Deutsch \ Русский \ 日本語 \ Indonesian
 
 ## 0.8.9 [2023.10.09]
 

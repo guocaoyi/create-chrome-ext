@@ -15,7 +15,7 @@
 - 🥢 Multiple Language Supported ([JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/))
 - 🧶 Optimized Builds (Background \ Content \ Popup \ Options \ SidePanel \ DevtoolsPanel)
 
-[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [Deutsch](./docs/README.de-DE.md) · [Русский](./docs/README.ja-JP.md) · [日本語](./docs/README.ja-JP.md)
+[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [한국어](./docs/README.ko-KR.md) · [Indonesian](./docs/README.id-ID.md) · [Русский](./docs/README.ja-JP.md) · [Deutsch](./docs/README.de-DE.md) · [日本語](./docs/README.ja-JP.md) (Translation support by ChatGPT)
 
 ## Installing
 
