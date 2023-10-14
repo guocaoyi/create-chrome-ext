@@ -1,0 +1,34 @@
+section::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://source.unsplash.com/random');
+  background-size: cover;
+  filter: blur(10px);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #61dafb;
+  text-transform: uppercase;
+  font-size: 6rem;
+  margin: 2rem auto;
+}
+
+a {
+  font-size: 0.5rem;
+  margin: 0.5rem;
+  color: #cccccc;
+  text-decoration: none;
+}

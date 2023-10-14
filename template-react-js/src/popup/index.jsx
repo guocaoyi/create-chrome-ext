@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './Popup'
+import { Popup } from './Popup'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('app')).render(
   <React.StrictMode>
-    <App />
+    <Popup />
   </React.StrictMode>,
 )
