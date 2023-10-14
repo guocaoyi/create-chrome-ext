@@ -1,8 +1,8 @@
-import { render } from 'preact'
+import { createElement, render } from 'preact'
 import { DevTools } from './DevTools'
 import './index.css'
 
-render(<DevTools />, document.getElementById('app') as HTMLElement)
+render(createElement(DevTools, null), document.getElementById('app'))
 
 chrome.devtools.panels.create('PreactCrx', '', '../../devtools.html', function () {
   console.log('devtools panel create')
