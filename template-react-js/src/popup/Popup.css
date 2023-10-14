@@ -1,6 +1,7 @@
-:root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: #61dafb;
+  }
 }
 
 main {
@@ -18,10 +19,30 @@ h3 {
   margin: 2rem auto;
 }
 
-h6 {
-  font-size: 0.5rem;
-  color: #333333;
-  margin: 0.5rem;
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+
+  & > button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #61dafb;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #61dafb;
+    cursor: pointer;
+    outline: none;
+
+    width: 3rem;
+    margin: 0 a;
+  }
+
+  & > label {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
 }
 
 a {
@@ -29,10 +50,4 @@ a {
   margin: 0.5rem;
   color: #cccccc;
   text-decoration: none;
-}
-
-@media (min-width: 480px) {
-  h3 {
-    max-width: none;
-  }
 }
