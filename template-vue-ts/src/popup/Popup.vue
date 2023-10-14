@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
 const count = ref(0)
 const link = ref('https://github.com/guocaoyi/create-chrome-ext')
@@ -11,14 +11,13 @@ const add = () => count.value++
 
 onMounted(() => {
   chrome.storage.sync.get(['count'], (result) => {
-    count.value = result.count || 0
+    count.value = result.count ?? 0
   })
 })
 
 watch(count, (newCount) => {
   chrome.storage.sync.set({ count: newCount })
 
-  console.info('popup -->', newCount)
   chrome.runtime.sendMessage({ type: 'COUNT', count: count.value })
 })
 </script>

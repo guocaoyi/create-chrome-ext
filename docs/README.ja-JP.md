@@ -15,7 +15,7 @@
 - 🥢 複数の言語をサポート（[JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/)）
 - 🧶 最適化されたビルド
 
-[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [Deutsch](./docs/README.de-DE.md) · [Русский](./docs/README.ja-JP.md) · [日本語](./docs/README.ja-JP.md)
+[English](../README.md) · [简体中文](./README.zh-CN.md) · [French](./README.fr-FR.md) · [한국어](./README.ko-KR.md) · [Indonesian](./README.id-ID.md) · [Русский](./README.ru-RU.md) · [Deutsch](./README.de-DE.md) · [日本語](./README.ja-JP.md) (Translated by ChatGPT)
 
 ## インストール
 

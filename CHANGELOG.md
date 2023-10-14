@@ -11,11 +11,10 @@ Summary
 
 ## 0.9.0 [xxxx.xx.xx]
 
-- fix: vue framework vite @3 error (issue #51)
 - feat: depen version update, <vite@4.x>
-- feat: support devtool panel
-- doc: update README.md
-- doc: i18n, supprt French \ Deutsch \ Русский \ 日本語 \ Indonesian
+- feat: support devtools \ sidepanel \ newtab override
+- feat: out of box functions, countor \ newtab timer \ events
+- doc: update README.md & i18n (French \ 한국어 \ Indonesian \ Русский \ Deutsch \ 日本語)
 
 ## 0.8.9 [2023.10.09]
 
