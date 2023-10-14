@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     build: {
+      cssCodeSplit: true,
       emptyOutDir: true,
       outDir: 'build',
       rollupOptions: {

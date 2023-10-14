@@ -1,3 +1,7 @@
-console.info('chrome-ext template-vue-ts background script')
+console.log('background is running')
 
-export {}
+chrome.runtime.onMessage.addListener((request) => {
+  if (request.type === 'COUNT') {
+    console.log('background has received a message from popup, and count is ', request?.count)
+  }
+})
