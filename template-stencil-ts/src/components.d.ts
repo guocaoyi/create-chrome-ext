@@ -6,6 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DevtoolsRoot {
+    }
+    interface NewtabRoot {
+    }
     interface OptionsRoot {
     }
     interface PopupRoot {
@@ -14,6 +18,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLDevtoolsRootElement extends Components.DevtoolsRoot, HTMLStencilElement {
+    }
+    var HTMLDevtoolsRootElement: {
+        prototype: HTMLDevtoolsRootElement;
+        new (): HTMLDevtoolsRootElement;
+    };
+    interface HTMLNewtabRootElement extends Components.NewtabRoot, HTMLStencilElement {
+    }
+    var HTMLNewtabRootElement: {
+        prototype: HTMLNewtabRootElement;
+        new (): HTMLNewtabRootElement;
+    };
     interface HTMLOptionsRootElement extends Components.OptionsRoot, HTMLStencilElement {
     }
     var HTMLOptionsRootElement: {
@@ -33,12 +49,18 @@ declare global {
         new (): HTMLSideRootElement;
     };
     interface HTMLElementTagNameMap {
+        "devtools-root": HTMLDevtoolsRootElement;
+        "newtab-root": HTMLNewtabRootElement;
         "options-root": HTMLOptionsRootElement;
         "popup-root": HTMLPopupRootElement;
         "side-root": HTMLSideRootElement;
     }
 }
 declare namespace LocalJSX {
+    interface DevtoolsRoot {
+    }
+    interface NewtabRoot {
+    }
     interface OptionsRoot {
     }
     interface PopupRoot {
@@ -46,6 +68,8 @@ declare namespace LocalJSX {
     interface SideRoot {
     }
     interface IntrinsicElements {
+        "devtools-root": DevtoolsRoot;
+        "newtab-root": NewtabRoot;
         "options-root": OptionsRoot;
         "popup-root": PopupRoot;
         "side-root": SideRoot;
@@ -55,6 +79,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "devtools-root": LocalJSX.DevtoolsRoot & JSXBase.HTMLAttributes<HTMLDevtoolsRootElement>;
+            "newtab-root": LocalJSX.NewtabRoot & JSXBase.HTMLAttributes<HTMLNewtabRootElement>;
             "options-root": LocalJSX.OptionsRoot & JSXBase.HTMLAttributes<HTMLOptionsRootElement>;
             "popup-root": LocalJSX.PopupRoot & JSXBase.HTMLAttributes<HTMLPopupRootElement>;
             "side-root": LocalJSX.SideRoot & JSXBase.HTMLAttributes<HTMLSideRootElement>;
