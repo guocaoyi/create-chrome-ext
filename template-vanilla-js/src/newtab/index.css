@@ -20,10 +20,6 @@
   :root {
     background-color: #fafafa;
   }
-
-  a:hover {
-    color: #f3e5ab;
-  }
 }
 
 body {
@@ -31,18 +27,31 @@ body {
   margin: 0;
 }
 
-main {
-  text-align: center;
-  padding: 1em;
-  margin: 0 auto;
+section::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://source.unsplash.com/random');
+  background-size: cover;
+  filter: blur(10px);
 }
 
-h3 {
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
   color: #f3e5ab;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 200;
-  line-height: 1.2rem;
+  font-size: 6rem;
   margin: 2rem auto;
 }
 
