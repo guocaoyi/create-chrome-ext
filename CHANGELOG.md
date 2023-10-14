@@ -9,7 +9,7 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
-## 0.9.0 [xxxx.xx.xx]
+## 0.9.0 [2023.10.15]
 
 - feat: depen version update, <vite@4.x>
 - feat: support devtools \ sidepanel \ newtab override
