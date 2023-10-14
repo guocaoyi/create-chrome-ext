@@ -10,15 +10,23 @@ export const config: Config = {
       buildDir: 'assets',
       dir: 'build',
       serviceWorker: null,
-      copy: [{ src: 'options.html' }, { src: 'popup.html' }, { src: 'sidepanel.html' }],
+      copy: [
+        { src: 'devtools.html' },
+        { src: 'newtab.html' },
+        { src: 'options.html' },
+        { src: 'popup.html' },
+        { src: 'sidepanel.html' },
+        { src: 'background/index.js' },
+        { src: 'contentScript/index.js' },
+      ],
     },
   ],
   sourceMap: false,
   rollupConfig: {
     inputOptions: {
       moduleContext: {
-        content: './src/global/content',
-        background: './src/global/background',
+        content: './src/contentScript',
+        background: './src/background',
       },
       treeshake: true,
     },

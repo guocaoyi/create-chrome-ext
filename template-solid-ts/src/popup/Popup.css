@@ -1,0 +1,53 @@
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: #142d61;
+  }
+}
+
+main {
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #142d61;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.2rem;
+  margin: 2rem auto;
+}
+
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+
+  & > button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #142d61;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #142d61;
+    cursor: pointer;
+    outline: none;
+
+    width: 3rem;
+    margin: 0 a;
+  }
+
+  & > label {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+}
+
+a {
+  font-size: 0.5rem;
+  margin: 0.5rem;
+  color: #cccccc;
+  text-decoration: none;
+}
