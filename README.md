@@ -9,13 +9,13 @@
 
 > Scaffolding your chrome extension, multiple boilerplates supported!
 
-- 🚀 Lightning Fast HMR(use [Vite4](https://vitejs.dev))
-- 🥡 Out of Box
-- 🌈 Multiple Frontend Framework Supported ([React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com))
+- 🚀 Lightning Fast HMR(use [Vite@latest](https://vitejs.dev))
+- 🌈 Multiple Framework Supported ([React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com))
 - 🥢 Multiple Language Supported ([JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/))
-- 🧶 Optimized Builds (Background \ Content \ Popup \ Options \ SidePanel \ DevtoolsPanel)
+- 🥡 Out of Box (Background \ Content \ Popup \ Options \ SidePanel \ DevTools \ NewTab)
+- 🧶 Optimized Builds
 
-[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [한국어](./docs/README.ko-KR.md) · [Indonesian](./docs/README.id-ID.md) · [Русский](./docs/README.ja-JP.md) · [Deutsch](./docs/README.de-DE.md) · [日本語](./docs/README.ja-JP.md) (Translation support by ChatGPT)
+[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [한국어](./docs/README.ko-KR.md) · [Indonesian](./docs/README.id-ID.md) · [Русский](./docs/README.ru-RU.md) · [Deutsch](./docs/README.de-DE.md) · [日本語](./docs/README.ja-JP.md) (Translated by ChatGPT)
 
 ## Installing
 

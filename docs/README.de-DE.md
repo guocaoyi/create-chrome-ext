@@ -10,12 +10,12 @@
 > Strukturieren Sie Ihre Chrome-Erweiterung, mit Unterstützung mehrerer Boilerplates!
 
 - 🚀 Blitzschnelle HMR (Verwendung von [Vite4](https://vitejs.dev))
-- 🥡 Sofort einsatzbereit
-- 🌈 Unterstützung mehrerer Frontend-Frameworks ([React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com))
+- 🌈 Unterstützung mehrerer Frameworks ([React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com))
 - 🥢 Unterstützung mehrerer Sprachen ([JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/))
-- 🧶 Optimierte Builds (Hintergrund · Inhalt · Popup · Optionen · Seitenleiste · Devtools-Panel)
+- 🥡 Sofort einsatzbereit (Background \ Content \ Popup \ Options \ SidePanel \ DevTools \ NewTab)
+- 🧶 Optimierte Builds
 
-[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [Deutsch](./docs/README.de-DE.md) · [Русский](./docs/README.ja-JP.md) · [日本語](./docs/README.ja-JP.md)
+[English](../README.md) · [简体中文](./README.zh-CN.md) · [French](./README.fr-FR.md) · [한국어](./README.ko-KR.md) · [Indonesian](./README.id-ID.md) · [Русский](./README.ru-RU.md) · [Deutsch](./README.de-DE.md) · [日本語](./README.ja-JP.md) (Translated by ChatGPT)
 
 ## Installation
 

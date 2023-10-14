@@ -6,7 +6,7 @@ const link = ref('https://github.com/guocaoyi/create-chrome-ext')
 
 onMounted(() => {
   chrome.storage.sync.get(['count'], (result) => {
-    countSync.value = result.count || 0
+    countSync.value = result.count ?? 0
   })
 
   chrome.runtime.onMessage.addListener((request) => {
