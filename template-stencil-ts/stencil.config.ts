@@ -13,7 +13,14 @@ export const config: Config = {
       copy: [{ src: 'options.html' }, { src: 'popup.html' }, { src: 'sidepanel.html' }],
     },
   ],
-  // rollupPlugins: {
-  //   before: [rollupcrx()],
-  // },
+  sourceMap: false,
+  rollupConfig: {
+    inputOptions: {
+      moduleContext: {
+        content: './src/global/content',
+        background: './src/global/background',
+      },
+      treeshake: true,
+    },
+  },
 }

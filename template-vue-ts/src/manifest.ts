@@ -25,7 +25,7 @@ export default defineManifest({
   content_scripts: [
     {
       matches: ['http://*/*', 'https://*/*'],
-      js: ['src/content/index.ts'],
+      js: ['src/contentScript/index.ts'],
     },
   ],
   side_panel: {
@@ -37,5 +37,8 @@ export default defineManifest({
       matches: [],
     },
   ],
-  permissions: ['sidePanel'],
+  permissions: ['sidePanel', 'storage'],
+  chrome_url_overrides: {
+    newtab: 'newtab.html',
+  },
 })

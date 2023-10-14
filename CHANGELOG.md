@@ -9,11 +9,13 @@ Summary
   5. version timestamp follow the yyyy.MM.dd format
 ```
 
-## Next [xxxx.xx.xx]
+## 0.9.0 [xxxx.xx.xx]
 
-- feat: vite version update to 3.x
 - fix: vue framework vite @3 error (issue #51)
+- feat: depen version update, <vite@4.x>
+- feat: support devtool panel
 - doc: update README.md
+- doc: i18n, supprt French \ Deutsch \ Русский \ 日本語 \ Indonesian
 
 ## 0.8.9 [2023.10.09]
 

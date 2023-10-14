@@ -1,7 +1,6 @@
 # Create Chrome Extension (.crx)
 
-![crx-preview](./docs/crx-preview.png)
-
+![crx-preview](./docs/img/crx-preview.png)
 [![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
@@ -10,13 +9,13 @@
 
 > Scaffolding your chrome extension, multiple boilerplates supported!
 
-- 🚀 Lightning Fast HMR(use [Vite3](https://vitejs.dev))
+- 🚀 Lightning Fast HMR(use [Vite4](https://vitejs.dev))
 - 🥡 Out of Box
-- 🌈 Multiple Frontend Framework Supported (10+)
-- 🥢 Multiple Language Supported (TypeScript & JavaScript)
-- 🧶 Optimized Builds
+- 🌈 Multiple Frontend Framework Supported ([React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com))
+- 🥢 Multiple Language Supported ([JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/))
+- 🧶 Optimized Builds (Background \ Content \ Popup \ Options \ SidePanel \ DevtoolsPanel)
 
-[EN](./README.md) · [中文](./README_zh.md)
+[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [한국어](./docs/README.ko-KR.md) · [Indonesian](./docs/README.id-ID.md) · [Русский](./docs/README.ja-JP.md) · [Deutsch](./docs/README.de-DE.md) · [日本語](./docs/README.ja-JP.md) (Translation support by ChatGPT)
 
 ## Installing
 
@@ -64,18 +63,8 @@ You can also generator the project with `crx` cli, run:
 λ create-chrome-ext my-crx-app
 ```
 
-## Supported Templates
-
-framework presets include:
-
-[React](https://reactjs.org) · [Vue](https://vuejs.org) · [Svelte](https://svelte.dev) · [Preact](https://preactjs.com) · [Solid](https://www.solidjs.com) · [Alpine](https://alpinejs.dev) · [Lit](https://lit.dev) · [Inferno](https://www.infernojs.org) · [Stencil](https://stenciljs.com) · [Vanilla](http://vanilla-js.com)
-
-languages supported:
-
-[JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/)
-
 ## Preview
 
-![crx-run](./docs/crx-run.png)
-![crx-install](./docs/crx-install.png)
-![crx-build](./docs/crx-build.png)
+![crx-run](./docs/img/crx-run.png)
+![crx-install](./docs/img/crx-install.png)
+![crx-build](./docs/img/crx-build.png)

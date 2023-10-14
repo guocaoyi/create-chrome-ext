@@ -386,7 +386,15 @@ async function init() {
       console.log(`  ${pkgManager} run dev`)
       break
   }
-  console.log()
+  console.log(`
+   Suggest you next step:
+    1. cd ${path.relative(cwd, root)}
+    2. Run ${pkgManager} install
+    3. Open chrome://extensions/ in your browser
+    4. Check the box for Developer mode in the top right.
+    5. Click the Load unpacked extension button.
+    6. Select the build/ directory that was created.
+  `)
 }
 
 /**
