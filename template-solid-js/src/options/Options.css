@@ -3,6 +3,12 @@
     'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: #142d61;
+  }
+}
+
 main {
   text-align: center;
   padding: 1em;
