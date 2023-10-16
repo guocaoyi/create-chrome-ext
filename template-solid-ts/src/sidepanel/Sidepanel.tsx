@@ -19,7 +19,7 @@ export const Sidepanel = () => {
         setCountSync(request.count || 0)
       }
     })
-  }, [])
+  })
 
   return (
     <main>

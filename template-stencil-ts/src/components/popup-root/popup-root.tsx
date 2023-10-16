@@ -20,12 +20,6 @@ export class PopupRoot {
     chrome.storage.sync.get(['count'], (result) => {
       this.count = result.count || 0
     })
-
-    chrome.runtime.onMessage.addListener((request) => {
-      if (request.type === 'COUNT') {
-        this.count = request.count || 0
-      }
-    })
   }
 
   minus = () => {

@@ -19,7 +19,7 @@ export const Options = () => {
         setCountSync(request.count || 0)
       }
     })
-  }, [])
+  })
 
   return (
     <main>

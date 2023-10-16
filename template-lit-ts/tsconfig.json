@@ -13,6 +13,7 @@
     "moduleResolution": "Node",
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false,

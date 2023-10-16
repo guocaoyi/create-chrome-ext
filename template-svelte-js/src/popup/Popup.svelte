@@ -15,12 +15,10 @@
 
   onMount(() => {
     chrome.storage.sync.get(['count'], (result) => {
-      console.info('Popup Page Mounted', count, result.count)
       count = result.count ?? 0
     })
 
     return () => {
-      console.info('Popup Page Destroyed', count)
       chrome.storage.sync.set({ count })
     }
   })

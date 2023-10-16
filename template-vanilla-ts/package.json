@@ -26,6 +26,6 @@
     "@types/chrome": "^0.0.246",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "vite": "^3.2.7"
+    "vite": "^4.4.11"
   }
 }
