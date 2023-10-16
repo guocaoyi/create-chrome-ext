@@ -17,7 +17,7 @@ const cwd = process.cwd()
  */
 const Boilerplates = [
   {
-    name: 'react', // star:191 wd:15097
+    name: 'react', // star:214 wd:17209
     kolor: ansi256(81),
     variants: [
       {
@@ -33,7 +33,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'vue', // star:197 wd:3223
+    name: 'vue', // star:206 wd:3219
     kolor: ansi256(36),
     variants: [
       {
@@ -49,7 +49,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'svelte', // star:60.3 wd:339
+    name: 'svelte', // star:73 wd:580
     kolor: ansi256(203),
     variants: [
       {
@@ -65,7 +65,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'preact', // star:32 wd:1385
+    name: 'preact', // star:35 wd:2119
     kolor: ansi256(56),
     variants: [
       {
@@ -81,7 +81,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'solid', // star:19.9 wd:30
+    name: 'solid', // star:29 wd:114
     kolor: ansi256(25),
     variants: [
       {
@@ -97,7 +97,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'alpine', // star:21.1 wd:93
+    name: 'alpine', // star:25 wd:131
     kolor: ansi256(116),
     variants: [
       {
@@ -113,7 +113,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'lit', // star:11.9 wd:300
+    name: 'lit', // star:16 wd:1142
     kolor: ansi256(43),
     variants: [
       {
@@ -129,7 +129,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'stencil', // star:11.9 wd:655
+    name: 'stencil', // star:12 wd:739
     kolor: ansi256(69),
     variants: [
       {
@@ -140,7 +140,7 @@ const Boilerplates = [
     ],
   },
   {
-    name: 'inferno', // star:15.9 wd:88
+    name: 'inferno', // star:15.9 wd:127
     kolor: ansi256(202),
     variants: [
       {

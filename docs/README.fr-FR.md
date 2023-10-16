@@ -15,7 +15,7 @@
 - 🥢 Prise en charge de plusieurs langages ([JavaScript](https://www.javascript.com/) · [TypeScript](https://www.typescriptlang.org/))
 - 🧶 Création optimisée
 
-[English](../README.md) · [简体中文](./README.zh-CN.md) · [French](./README.fr-FR.md) · [한국어](./README.ko-KR.md) · [Indonesian](./README.id-ID.md) · [Русский](./README.ru-RU.md) · [Deutsch](./README.de-DE.md) · [日本語](./README.ja-JP.md) (Translated by ChatGPT)
+[English](../README.md) · [简体中文](./README.zh-CN.md) · French · [한국어](./README.ko-KR.md) · [Indonesian](./README.id-ID.md) · [Русский](./README.ru-RU.md) · [Deutsch](./README.de-DE.md) · [日本語](./README.ja-JP.md) (by ChatGPT)
 
 ## Installation
 
