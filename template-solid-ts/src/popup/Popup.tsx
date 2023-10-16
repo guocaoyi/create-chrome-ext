@@ -19,18 +19,12 @@ export const Popup = () => {
     chrome.storage.sync.get(['count'], (result) => {
       setCount(result.count || 0)
     })
-
-    chrome.runtime.onMessage.addListener((request) => {
-      if (request.type === 'COUNT') {
-        setCount(request.count || 0)
-      }
-    })
-  }, [])
+  })
 
   createEffect(() => {
-    chrome.storage.sync.set({ count })
-    chrome.runtime.sendMessage({ type: 'COUNT', count })
-  }, [count])
+    chrome.storage.sync.set({ count: count() })
+    chrome.runtime.sendMessage({ type: 'COUNT', count: count() })
+  })
 
   return (
     <main>

@@ -15,7 +15,7 @@
 - 🥡 Out of Box (Background \ Content \ Popup \ Options \ SidePanel \ DevTools \ NewTab)
 - 🧶 Optimized Builds
 
-[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [한국어](./docs/README.ko-KR.md) · [Indonesian](./docs/README.id-ID.md) · [Русский](./docs/README.ru-RU.md) · [Deutsch](./docs/README.de-DE.md) · [日本語](./docs/README.ja-JP.md) (Translated by ChatGPT)
+[English](./README.md) · [简体中文](./docs/README.zh-CN.md) · [French](./docs/README.fr-FR.md) · [한국어](./docs/README.ko-KR.md) · [Indonesian](./docs/README.id-ID.md) · [Русский](./docs/README.ru-RU.md) · [Deutsch](./docs/README.de-DE.md) · [日本語](./docs/README.ja-JP.md) (by ChatGPT)
 
 ## Installing
 

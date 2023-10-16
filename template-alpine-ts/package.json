@@ -28,6 +28,6 @@
     "@types/alpinejs": "^3.13.2",
     "@types/chrome": "^0.0.246",
     "typescript": "^5.2.2",
-    "vite": "^3.2.7"
+    "vite": "^4.4.11"
   }
 }

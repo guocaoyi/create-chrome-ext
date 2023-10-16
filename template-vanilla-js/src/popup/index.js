@@ -63,12 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
     chrome.storage.sync.set({ count })
     chrome.runtime.sendMessage({ type: 'COUNT', count })
   })
-
-  // Listen for messages from the Popup
-  chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-    if (request.type === 'COUNT') {
-      count = request.count || 0
-      countLabel.textContent = `${count}`
-    }
-  })
 })
