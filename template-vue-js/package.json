@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-vue-js",
+  "displayName": "Vue.js Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",

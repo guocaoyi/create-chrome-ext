@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-vue-ts",
+  "displayName": "Vue.ts Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",

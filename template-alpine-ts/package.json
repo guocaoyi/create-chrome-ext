@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-alpine-ts",
+  "displayName": "Alpine.ts Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",

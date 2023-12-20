@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-preact-ts",
+  "displayName": "Preact.ts Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",
