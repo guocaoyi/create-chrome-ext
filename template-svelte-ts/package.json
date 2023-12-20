@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-svelte-ts",
+  "displayName": "Svelte.ts Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",

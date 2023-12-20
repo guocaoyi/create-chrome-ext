@@ -1,5 +1,6 @@
 {
   "name": "chrome-extension-preact-js",
+  "displayName": "Preact.js Chrome Extension",
   "version": "0.0.0",
   "author": "",
   "description": "",
