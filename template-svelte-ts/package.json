@@ -19,9 +19,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{svelte,ts,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{svelte,ts,json,css,scss,md}'",
+    "zip": "npm run build && node ./src/zip.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@types/chrome": "^0.0.246",
@@ -32,6 +32,9 @@
     "svelte-preprocess": "^5.0.4",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vite": "^4.4.11"
+    "vite": "^4.4.11",
+    "fs": "^0.0.1-security",
+    "jszip": "^3.10.1",
+    "path": "^0.12.7"
   }
 }

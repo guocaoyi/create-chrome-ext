@@ -18,7 +18,8 @@
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "generate": "stencil generate",
-    "fmt": "prettier --write '**/*.{jsx,js,json,css,md}'"
+    "fmt": "prettier --write '**/*.{jsx,js,json,css,md}'",
+    "zip": "npm run build && node ./src/zip.js"
   },
   "devDependencies": {
     "@stencil/core": "^4.4.0",
@@ -26,6 +27,9 @@
     "@types/node": "^20.8.3",
     "express": "^4.18.2",
     "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "fs": "^0.0.1-security",
+    "jszip": "^3.10.1",
+    "path": "^0.12.7"
   }
 }

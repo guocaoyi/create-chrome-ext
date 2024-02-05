@@ -20,7 +20,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'"
+    "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'",
+    "zip": "npm run build && node ./src/zip.js"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",

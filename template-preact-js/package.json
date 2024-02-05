@@ -19,7 +19,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{jsx,js,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{jsx,js,json,css,scss,md}'",
+    "zip": "npm run build && node ./src/zip.js"
   },
   "dependencies": {
     "preact": "^10.18.1"
@@ -28,6 +29,9 @@
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@preact/preset-vite": "^2.6.0",
     "prettier": "^3.0.3",
-    "vite": "^4.4.11"
+    "vite": "^4.4.11",
+    "fs": "^0.0.1-security",
+    "jszip": "^3.10.1",
+    "path": "^0.12.7"
   }
 }

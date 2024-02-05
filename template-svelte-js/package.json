@@ -19,9 +19,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{svelte,js,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{svelte,js,json,css,scss,md}'",
+    "zip": "npm run build && node ./src/zip.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@sveltejs/vite-plugin-svelte": "2.4.6",
@@ -29,6 +29,9 @@
     "prettier-plugin-svelte": "^3.0.3",
     "svelte": "^4.2.1",
     "svelte-preprocess": "^5.0.4",
-    "vite": "^4.4.11"
+    "vite": "^4.4.11",
+    "fs": "^0.0.1-security",
+    "jszip": "^3.10.1",
+    "path": "^0.12.7"
   }
 }
