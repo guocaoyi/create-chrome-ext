@@ -19,13 +19,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "fmt": "prettier --write '**/*.{js,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{js,json,css,scss,md}'",
+    "zip": "npm run build && node src/zip.js"
   },
   "dependencies": {
     "lit": "^2.8.0"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0",
     "prettier": "^3.0.3",
     "vite": "^3.2.7"
   }

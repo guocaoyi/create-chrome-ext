@@ -19,13 +19,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "zip": "npm run build && node src/zip.js"
   },
   "dependencies": {
     "alpinejs": "^3.13.1"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0",
     "vite": "^4.4.11"
   }
 }

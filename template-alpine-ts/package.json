@@ -19,7 +19,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "zip": "npm run build && node src/zip.js"
   },
   "dependencies": {
     "alpinejs": "^3.13.1"
@@ -28,6 +29,8 @@
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@types/alpinejs": "^3.13.2",
     "@types/chrome": "^0.0.246",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.11"
   }

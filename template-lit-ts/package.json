@@ -19,7 +19,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "fmt": "prettier --write '**/*.{ts,json,css,scss,md}'"
+    "fmt": "prettier --write '**/*.{ts,json,css,scss,md}'",
+    "zip": "npm run build && node src/zip.js"
   },
   "dependencies": {
     "lit": "^3.0.0"
@@ -27,6 +28,8 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@types/chrome": "^0.0.246",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0",
     "path": "^0.12.7",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
