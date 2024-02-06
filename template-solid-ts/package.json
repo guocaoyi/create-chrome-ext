@@ -20,11 +20,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'"
+    "fmt": "prettier --write '**/*.{tsx,ts,json,css,md}'",
+    "zip": "npm run build && node src/zip.js"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@types/chrome": "^0.0.246",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
