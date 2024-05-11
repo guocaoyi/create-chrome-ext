@@ -101,12 +101,12 @@ const Boilerplates = [
     kolor: ansi256(116),
     variants: [
       {
-        name: 'inferno-js',
+        name: 'alpine-js',
         display: 'JavaScript',
         kolor: ansi256(226),
       },
       {
-        name: 'inferno-ts',
+        name: 'alpine-ts',
         display: 'TypeScript',
         kolor: ansi256(25),
       },
