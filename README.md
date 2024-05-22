@@ -1,6 +1,7 @@
+![crx-preview](./docs/img/crx-preview.png)
+
 # Create Chrome Extension (.crx)
 
-![crx-preview](./docs/img/crx-preview.png)
 [![OSCS Status](https://www.oscs1024.com/platform/badge/guocaoyi/create-chrome-ext.svg?size=small)](https://www.oscs1024.com/project/guocaoyi/create-chrome-ext?ref=badge_small)
 [![npm](https://img.shields.io/npm/v/create-chrome-ext?logo=npm)](https://www.npmjs.com/package/create-chrome-ext)
 [![npm-download](https://img.shields.io/npm/dw/create-chrome-ext)](https://www.npmjs.com/package/create-chrome-ext)
