@@ -30,7 +30,7 @@
     "@babel/parser": "7.23.0",
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@types/chrome": "^0.0.246",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-zip": "^6.0.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",

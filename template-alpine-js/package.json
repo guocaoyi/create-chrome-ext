@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-zip": "^6.0.0",
     "vite": "^4.4.11"
   }
