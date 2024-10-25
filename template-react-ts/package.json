@@ -27,7 +27,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "@crxjs/vite-plugin": "^2.0.0-beta.26",
     "@types/chrome": "^0.0.246",
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
@@ -36,6 +36,6 @@
     "gulp-zip": "^6.0.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "vite": "^4.4.11"
+    "vite": "^5.4.10"
   }
 }

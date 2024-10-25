@@ -26,13 +26,13 @@
     "preact": "^10.18.1"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "@crxjs/vite-plugin": "^2.0.0-beta.26",
     "@preact/preset-vite": "^2.6.0",
     "@types/chrome": "^0.0.246",
     "gulp": "^5.0.0",
     "gulp-zip": "^6.0.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "vite": "^4.4.11"
+    "vite": "^5.4.10"
   }
 }
