@@ -23,7 +23,7 @@
     "zip": "npm run build && node src/zip.js"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "@crxjs/vite-plugin": "^2.0.0-beta.26",
     "@sveltejs/vite-plugin-svelte": "2.4.6",
     "gulp": "^5.0.0",
     "gulp-zip": "^6.0.0",
@@ -31,6 +31,6 @@
     "prettier-plugin-svelte": "^3.0.3",
     "svelte": "^4.2.1",
     "svelte-preprocess": "^5.0.4",
-    "vite": "^4.4.11"
+    "vite": "^5.4.10"
   }
 }
