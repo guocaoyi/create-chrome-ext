@@ -32,5 +32,8 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, 'src'),
       },
     },
+    legacy: {
+      skipWebSocketTokenCheck: true,
+    },
   }
 })
