@@ -295,8 +295,17 @@ async function init() {
         },
       },
     )
-  } catch (error) {
-    console.log(error)
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error(`${red('✖')} ${error.message}`)
+      if (error.message.includes('cancelled')) {
+        console.log('\nOperation cancelled by user.')
+      } else {
+        console.error('Please check your inputs and try again.')
+      }
+    } else {
+      console.error(`${red('✖')} An unexpected error occurred:`, error)
+    }
     return
   }
 
@@ -308,7 +317,11 @@ async function init() {
   if (overwrite) {
     emptyDir(root)
   } else if (!fs.existsSync(root)) {
-    fs.mkdirSync(root, { recursive: true })
+    try {
+      fs.mkdirSync(root, { recursive: true })
+    } catch (error) {
+      throw new Error(`${red('✖')} Failed to create project directory "${root}": ${error instanceof Error ? error.message : String(error)}. Check write permissions in the current directory.`)
+    }
   }
 
   // determine template
@@ -320,9 +333,19 @@ async function init() {
   //@ts-ignore
   const templateDir = path.resolve(fileURLToPath(import.meta.url), '..', `template-${template}`)
 
+  // Verify template directory exists
+  if (!fs.existsSync(templateDir)) {
+    throw new Error(`${red('✖')} Template "${template}" not found. Available templates: ${TEMPLATES.join(', ')}`)
+  }
+
   // mustache
   //@ts-ignore
   const mustacheDir = path.resolve(fileURLToPath(import.meta.url), '..', 'mustache')
+
+  // Verify mustache directory exists
+  if (!fs.existsSync(mustacheDir)) {
+    throw new Error(`${red('✖')} Template directory not found. Please reinstall the package.`)
+  }
 
   const opts = {
     name: packageName || getProjectName(),
@@ -340,26 +363,52 @@ async function init() {
     const targetPath = renameFiles[file]
       ? path.join(root, renameFiles[file])
       : path.join(root, file)
-    if (content) {
-      fs.writeFileSync(targetPath, content)
-    } else if (/\.mustache$/gi.test(file)) {
-      copy(path.join(mustacheDir, file), targetPath, opts)
-    } else {
-      copy(path.join(templateDir, file), targetPath)
+    try {
+      if (content) {
+        fs.writeFileSync(targetPath, content)
+      } else if (/\.mustache$/gi.test(file)) {
+        copy(path.join(mustacheDir, file), targetPath, opts)
+      } else {
+        copy(path.join(templateDir, file), targetPath)
+      }
+    } catch (error) {
+      throw new Error(`${red('✖')} Failed to write file "${targetPath}": ${error instanceof Error ? error.message : String(error)}. Check disk space and write permissions.`)
     }
   }
 
-  const files: string[] = fs.readdirSync(templateDir)
+  let files: string[] = []
+  try {
+    files = fs.readdirSync(templateDir)
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to read template directory "${templateDir}": ${error instanceof Error ? error.message : String(error)}. Please ensure the template "${template}" is properly installed.`)
+  }
   for (const file of files.filter((f) => f !== 'package.json')) {
     write(file)
   }
 
-  const mFiles = fs.readdirSync(mustacheDir)
+  let mFiles: string[] = []
+  try {
+    mFiles = fs.readdirSync(mustacheDir)
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to read mustache directory "${mustacheDir}": ${error instanceof Error ? error.message : String(error)}. Please ensure the mustache templates are properly installed.`)
+  }
   for (const file of mFiles) {
     write(file)
   }
 
-  const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8'))
+  let pkgContent: string = ''
+  try {
+    pkgContent = fs.readFileSync(path.join(templateDir, 'package.json'), 'utf-8')
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to read package.json from template "${template}": ${error instanceof Error ? error.message : String(error)}. The template may be corrupted.`)
+  }
+
+  let pkg: any
+  try {
+    pkg = JSON.parse(pkgContent)
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to parse package.json from template "${template}": ${error instanceof Error ? error.message : String(error)}. The JSON file may be malformed.`)
+  }
 
   pkg.name = packageName || getProjectName()
   if (pkg.displayName) {
@@ -405,16 +454,20 @@ function formatTargetDir(targetDir: string | undefined = '') {
 }
 
 function copy(src: string, dest: string, opts = {}) {
-  const stat = fs.statSync(src)
-  if (stat.isDirectory()) {
-    copyDir(src, dest)
-  } else if (/\.mustache$/gi.test(src)) {
-    let stemp = fs.readFileSync(src, { encoding: 'utf8' })
-    let result = mustache.render(stemp, opts)
-    dest = dest.replace(/\.mustache$/gi, '')
-    fs.writeFileSync(dest, result, { encoding: 'utf-8' })
-  } else {
-    fs.copyFileSync(src, dest)
+  try {
+    const stat = fs.statSync(src)
+    if (stat.isDirectory()) {
+      copyDir(src, dest)
+    } else if (/\.mustache$/gi.test(src)) {
+      let stemp = fs.readFileSync(src, { encoding: 'utf8' })
+      let result = mustache.render(stemp, opts)
+      dest = dest.replace(/\.mustache$/gi, '')
+      fs.writeFileSync(dest, result, { encoding: 'utf-8' })
+    } else {
+      fs.copyFileSync(src, dest)
+    }
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to copy "${src}" to "${dest}": ${error instanceof Error ? error.message : String(error)}. Check file permissions and disk space.`)
   }
 }
 
@@ -441,8 +494,18 @@ function toValidPackageName(projectName: string) {
  * copy direction
  */
 function copyDir(srcDir: string, destDir: string) {
-  fs.mkdirSync(destDir, { recursive: true })
-  for (const file of fs.readdirSync(srcDir)) {
+  try {
+    fs.mkdirSync(destDir, { recursive: true })
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to create directory "${destDir}": ${error instanceof Error ? error.message : String(error)}. Check write permissions in the target location.`)
+  }
+  let srcFiles: string[] = []
+  try {
+    srcFiles = fs.readdirSync(srcDir)
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to read source directory "${srcDir}": ${error instanceof Error ? error.message : String(error)}. The directory may be corrupted or inaccessible.`)
+  }
+  for (const file of srcFiles) {
     const srcFile = path.resolve(srcDir, file)
     const destFile = path.resolve(destDir, file)
     copy(srcFile, destFile)
@@ -452,8 +515,14 @@ function copyDir(srcDir: string, destDir: string) {
 /**
  * direction is empty
  */
-function isEmpty(path: string) {
-  const files = fs.readdirSync(path)
+function isEmpty(dirPath: string) {
+  let files: string[] = []
+  try {
+    files = fs.readdirSync(dirPath)
+  } catch (error) {
+    // If we can't read the directory, consider it not empty (will prompt to overwrite)
+    return false
+  }
   return files.length === 0 || (files.length === 1 && files[0] === '.git')
 }
 
@@ -464,8 +533,18 @@ function emptyDir(dir: string) {
   if (!fs.existsSync(dir)) {
     return
   }
-  for (const file of fs.readdirSync(dir)) {
-    fs.rmSync(path.resolve(dir, file), { recursive: true, force: true })
+  let files: string[] = []
+  try {
+    files = fs.readdirSync(dir)
+  } catch (error) {
+    throw new Error(`${red('✖')} Failed to read directory "${dir}" for cleanup: ${error instanceof Error ? error.message : String(error)}. The directory may be locked or inaccessible.`)
+  }
+  for (const file of files) {
+    try {
+      fs.rmSync(path.resolve(dir, file), { recursive: true, force: true })
+    } catch (error) {
+      throw new Error(`${red('✖')} Failed to remove file/directory "${file}" in "${dir}": ${error instanceof Error ? error.message : String(error)}. Check if the file is in use or you have sufficient permissions.`)
+    }
   }
 }
 
@@ -483,6 +562,19 @@ function pkgFromUserAgent(userAgent: any) {
   }
 }
 
-init().catch((e) => {
-  console.error(e)
+init().catch((e: unknown) => {
+  if (e instanceof Error) {
+    console.error(`${red('✖')} Error: ${e.message}`)
+    // Provide helpful suggestions based on common errors
+    if (e.message.includes('ENOENT') || e.message.includes('not found')) {
+      console.error('\nSuggestion: Try reinstalling the package with: npm install -g create-chrome-ext')
+    } else if (e.message.includes('EACCES') || e.message.includes('permission')) {
+      console.error('\nSuggestion: Check file permissions or try running with elevated privileges.')
+    } else if (e.message.includes('EMFILE') || e.message.includes('too many open files')) {
+      console.error('\nSuggestion: You may have too many files open. Try closing other applications.')
+    }
+  } else {
+    console.error(`${red('✖')} An unexpected error occurred:`, e)
+  }
+  process.exit(1)
 })
